@@ -50,7 +50,7 @@ export const data = [
   {
     id: 7,
     name: 'Epclusa',
-    medical: 'Sofosbuvir/velpatasvir',
+    medical: 'Sofosbuvir velpatasvir',
     keyword: 'other',
     image: 'https://www.mixdexhq.com/wp-content/uploads/epclusa-logo.jpg',
     purpose: 'A prescription medicine used to treat adults with chronic hepatitis C (Hep C) genotype 1-6 infection with or without cirrhosis (compensated).'
@@ -322,7 +322,7 @@ export const data = [
   {
     id: 41,
     name: 'Breztri',
-    medical: 'budesonide/glycopyrrolate/formoterol fumarate',
+    medical: 'budesonide glycopyrrolate formoterol fumarate',
     keyword: 'breathing',
     image: 'https://www.rcrracing.com/wp-content/uploads/sites/4/2021/03/03/BREZTRI_US_Logo_TM_Horz_WO_Dose_RGB_v1_3003.png',
     purpose: 'A medicine used long term to treat chronic obstructive pulmonary disease (COPD), including chronic bronchitis, emphysema, or both, for better breathing and fewer flare-ups.'
@@ -386,7 +386,7 @@ export const data = [
   {
     id: 49,
     name: 'Biktarvy',
-    medical: 'bictegravir/emtricitabine/tenofovir alafenamide',
+    medical: 'bictegravir emtricitabine tenofovir alafenamide',
     keyword: 'hiv',
     image: 'https://www.biktarvy.com/-/media/biktarvy/images/logos/biktarvy_logo.png?h=146&la=en&w=510&hash=CFA4BD0EF42AA59A9128D2FD14D88DCE',
     purpose: 'A fixed-dose combination antiretroviral medication for the treatment of HIV/AIDS. One tablet, taken orally once daily, contains 50 mg bictegravir, 200 mg emtricitabine, and 25 mg tenofovir alafenamide'
@@ -394,7 +394,7 @@ export const data = [
   {
     id: 50,
     name: 'Dovato',
-    medical: 'dolutegravir/lamivudine',
+    medical: 'dolutegravir lamivudine',
     keyword: 'hiv',
     image: 'https://i-cf65.gskstatic.com/content/dam/cf-viiv/dovato-hcp-redesign/master/logos/dovato-logo.png',
     purpose: 'A fixed-dose combination antiretroviral medication for the treatment of HIV/AIDS. It contains dolutegravir, an integrase inhibitor, and lamivudine, a reverse-transcriptase inhibitor. It is taken by mouth.'
@@ -411,7 +411,7 @@ export const data = [
     id: 52,
     name: 'Trelegy',
     keyword: 'breathing',
-    medical: 'fluticasone furoate/umeclidinium/vilanterol',
+    medical: 'fluticasone furoate umeclidinium vilanterol',
     image: 'https://gskpro.com/content/dam/global/hcpportal/en_IE/Images/trelegy-mt/trelegy-logo-img.png',
     purpose: 'A prescription medicine used long term to treat COPD, including chronic bronchitis, emphysema, or both and to treat asthma in adults.'
   },
