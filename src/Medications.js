@@ -7,7 +7,6 @@ import './App.css';
 function Medications() {
   const [meds, setMeds] = useState(data);
   const [cart, setCart] = useState([]);
-  const [showLike, setShowLike] = useState(new Array(data.length).fill(false));
     
 
   const chosenMeds = (keyword) => {
@@ -40,15 +39,28 @@ function Medications() {
     setMeds(newMeds); 
   }
 
+  const showList = () => {
+    const x = document.getElementById('items');
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+  }
+
   return(
     <div>
+      <div id='displayCart' className='cart notification' onClick={() => showList()}>
+        <span><i id='icon' className="fas fa-shopping-cart"></i></span>
+        <span className='badge'> {cart.length} </span>
+      </div>
       <div className='container'>
         <h5 className='shipping'><i className="fas fa-truck flip"></i> FREE SHIPPING ON ORDERS OVER $100! <i className="fas fa-truck"></i></h5>
       </div>
       <div className='gradient-text'>
-        <h1>A list of <u>{meds.length}</u> medications.</h1>
+        <h1>A list of <u>{meds.length}</u> brand-new medications.</h1>
       </div>
-      <div className='btn'>
+      <div id='items' style={{display: 'none'}}>
         <ul>
           {cart.map((newElement => {
             const {name} = newElement;
@@ -79,7 +91,7 @@ function Medications() {
                 
               </div>
               <div className='container'>
-                <button onClick={() => addItem(id)}>{showLike ? 'Add to Cart' : 'Remove from Cart'}</button>
+                <button onClick={() => addItem(id)}>Add to Cart</button>
               </div>
             </div>
           )
