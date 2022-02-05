@@ -6,29 +6,39 @@ import './App.css';
 
 function Medications() {
   const [meds, setMeds] = useState(data);
+  const [cart, setCart] = useState([]);
+  const [showLike, setShowLike] = useState(new Array(data.length).fill(false));
+    
 
   const chosenMeds = (keyword) => {
     const newMeds = data.filter(element => element.keyword === keyword);
     setMeds(newMeds);
   }
 
-  // const removeItem = (id) => {
-  //   let newmeds = meds.filter(item => item.id !== id)
-  //   setMeds(newmeds);
-  // }
+  const addItem = (id) => {
+    const drug = data.find(drug => drug.id === id);
+    if (!cart.includes(drug)) {
+      setCart([...cart, drug]);
+    }
+    if (cart.includes(drug)) {
+      const newList = [...cart];
+      newList.splice(newList.indexOf(drug), 1);
+      setCart(newList);
+    }
+  }
 
   const setShowMore = (id) => {
     const newMeds = [];
     meds.forEach(med => {
-        if (med.id === id) {
-            const changedMeds = {...med, showMore: !med.showMore};
-            newMeds.push(changedMeds);
-        } else {
-            newMeds.push(med);
-        }
+      if (med.id === id) {
+        const changedMeds = {...med, showMore: !med.showMore};
+        newMeds.push(changedMeds);
+      } else {
+        newMeds.push(med);
+      }
     });
     setMeds(newMeds); 
-}
+  }
 
   return(
     <div>
@@ -38,6 +48,17 @@ function Medications() {
       <div className='gradient-text'>
         <h1>A list of <u>{meds.length}</u> medications.</h1>
       </div>
+      <div className='btn'>
+        <ul>
+          {cart.map((newElement => {
+            const {name} = newElement;
+            return(
+              <li key={newElement.id}><span><i className="fas fa-check"></i></span>&nbsp;&nbsp;&nbsp;{name}</li>
+            )
+          }))}
+        </ul>
+      </div>
+      <br></br>
       <Buttons filteredMeds={chosenMeds} setWhatever={setMeds} data={data} />
       <div className='list'>
         {meds.map((element => {
@@ -54,13 +75,12 @@ function Medications() {
                 <h3>{medical}</h3>
               </div>
               <div className='container'>
-                {/* <p>{purpose}</p> */}
-                <p>{showMore ? purpose : purpose.substring(0, 90) + "..."}<span className="btn-more" onClick={() => setShowMore(id)}>{showMore ? ' less' : 'more'}</span></p>
+                <p>{showMore ? purpose : purpose.substring(0, 90) + "..."}<span className="btn-more" onClick={() => setShowMore(id)}>{showMore ? ' collapse' : 'expand'}</span></p>
                 
               </div>
-              {/* <div className='container'>
-                <button className='remove-each' onClick={() => removeItem(id)}>Remove Item</button>
-              </div> */}
+              <div className='container'>
+                <button onClick={() => addItem(id)}>{showLike ? 'Add to Cart' : 'Remove from Cart'}</button>
+              </div>
             </div>
           )
         }))}

@@ -2,9 +2,9 @@ import React from 'react';
 import './App.css';
 
 function Buttons({filteredMeds, setWhatever, data}) {
-
   return(
     <div className='btn'>
+      <button className='special' onClick={() => setWhatever(data)}>Start Over</button>
       <button onClick={() => filteredMeds('breathing')}>Breathing</button>
       <button onClick={() => filteredMeds('cancer')}>Cancer</button>
       <button onClick={() => filteredMeds('depression')}>Depression</button>
@@ -16,7 +16,6 @@ function Buttons({filteredMeds, setWhatever, data}) {
       <button onClick={() => filteredMeds('psoriasis')}>Psoriasis</button>
       <button onClick={() => filteredMeds('sleep')}>Sleep</button>
       <button className='special' onClick={() => setWhatever([])}>Clear All</button>
-      <button className='special' onClick={() => setWhatever(data)}>Restore All</button>
     </div>
   )
 }

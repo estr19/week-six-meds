@@ -6,6 +6,7 @@ export const data = [
     keyword: 'psoriasis',
     image: 'https://www.skyrizi.com/content/dam/skyrizi/images/og-images/skyrizi-homepage_r2_1200x630.jpg',
     purpose: 'Used to treat adults with moderate to severe plaque psoriasis who may benefit from taking injections or pills (systemic therapy) or treatment using ultraviolet or UV light (phototherapy).'
+
   },
   {
     id: 2,
