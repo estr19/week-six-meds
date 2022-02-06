@@ -26,7 +26,7 @@ function Ads() {
     return () => {
       resetTimeout();
     };
-  }, [index]);
+  });
 
   return (
     <div>
