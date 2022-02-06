@@ -1,5 +1,4 @@
-import React from 'react';
-import {useState} from 'react';
+import React, {useState} from 'react';
 import {data} from './data';
 import Buttons from './Buttons';
 import './App.css';
@@ -7,7 +6,6 @@ import './App.css';
 function Medications() {
   const [meds, setMeds] = useState(data);
   const [cart, setCart] = useState([]);
-    
 
   const chosenMeds = (keyword) => {
     const newMeds = data.filter(element => element.keyword === keyword);
@@ -54,8 +52,9 @@ function Medications() {
         <span><i id='icon' className="fas fa-shopping-cart"></i></span>
         <span className='badge'> {cart.length} </span>
       </div>
-      <div className='container'>
-        <h5 className='shipping'><i className="fas fa-truck flip"></i> FREE SHIPPING ON ORDERS OVER $100! <i className="fas fa-truck"></i></h5>
+      <div className='shipping'>
+          <i className="fas fa-truck flip"></i>&nbsp;FREE SHIPPING ON ORDERS OVER
+          $100!&nbsp;<i className="fas fa-truck"></i>
       </div>
       <div className='gradient-text'>
         <h1>A list of <u>{meds.length}</u> brand-new medications.</h1>
