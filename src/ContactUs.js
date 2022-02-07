@@ -1,32 +1,40 @@
 import React from "react";
 import {useState} from "react";
-import {quotes} from './quotes';
+import axios from 'axios';
 
 function ContactUs() {
   const [quote, setQuote] = useState();
+  const [author, setAuthor] = useState();
   const [show, setShow] = useState(false);
 
   const showQuote = () => {
+    axios.get('https://api.quotable.io/random')
+    .then(res => {
+      setQuote(res.data.content);
+      setAuthor(res.data.author);
+      console.log(quote);
+    })
     setShow(true);
-    setQuote((file => {
-      file = quotes[Math.floor(Math.random() * quotes.length)];
-      return file;
-    }))
   }
 
   return (
     <div>
       <div className='shipping' style={{cursor: 'pointer'}} onClick={() => showQuote()}>
-          <i className="fas fa-quote-left"></i>{show ? `${quote.text} ${quote.author} ` : 'In skating over thin ice our safety is in our speed. Ralph Waldo Emerson'}<i className="fas fa-quote-right"></i>
+        <h3><i className="fas fa-quote-left"></i>{show ? `${quote} ${author}` : 'Click here to get inspirational quotes!'}<i className="fas fa-quote-right"></i></h3>
       </div>
-      <div className='gradient-text'>
-        <h1>Contact Us</h1>
+      <div className='container'><span className='opaque'>
+        <div className='gradient-text'>
+          <h1>Contact Us</h1>
+        </div></span>
       </div>
       <div className="container">
-        <form id="form" action="https://formspree.io/f/mgedarra" method="POST" className="topBefore">
-          <input id="name" type="text" name="name" placeholder="NAME" required="" />
-          <input id="email" type="email" name="_replyto" placeholder="E-MAIL" required="" />
-          <textarea id="message" type="text" name="message" placeholder="MESSAGE" required=""></textarea>
+        <form id="form" action="https://formspree.io/f/mgedarra" method="POST" className="topBefore opaque">
+          <label><span className='opaque' style={{textAlign: 'center'}}>NAME</span></label>
+          <input className='opaque' id="name" type="text" name="name" placeholder="your Name" required="" />
+          <label><span className='opaque'>E-MAIL</span></label>
+          <input className='opaque' id="email" type="email" name="_replyto" placeholder="your e-mail" required="" />
+          <label><span className='opaque'>MESSAGE</span></label>
+          <textarea className='opaque' id="message" type="text" name="message" placeholder="a brief message" required=""></textarea>
           <input id="submit" type="submit" value="SUBMIT" />
         </form>
       </div>

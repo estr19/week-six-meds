@@ -9,7 +9,7 @@ function Buttons({filteredMeds, setWhatever, whatever, data}) {
 
   return(
     <div>
-      <div className='btn'>
+      <div className='btn header'>
         <button className='special' onClick={() => startOver()}>Start Over</button>
         <button onClick={() => filteredMeds('breathing')}>Breathing</button>
         <button onClick={() => filteredMeds('cancer')}>Cancer</button>
@@ -24,7 +24,7 @@ function Buttons({filteredMeds, setWhatever, whatever, data}) {
         <button className='special' onClick={() => setWhatever([])}>Clear All</button>
       </div>
       <div id='search' className='container'>
-        <h3>We have found <span>{whatever.length}</span> medications that match your selection:</h3>
+        <h3><span className='opaque'>We have found <span style={{color: '#d31334'}}>{whatever.length}</span> medications that match your selection:</span></h3>
       </div>
     </div>
   )

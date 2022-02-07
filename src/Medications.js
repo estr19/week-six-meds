@@ -50,10 +50,15 @@ function Medications() {
 
   const removeItem = (id) => {
     const drug = data.find(drug => drug.id === id);
-    if (cart.includes(drug)) {
-      const newList = [...cart];
-      newList.splice(newList.indexOf(drug), 1);
-      setCart(newList);
+    if (cart.length > 0) {
+      if (cart.includes(drug)) {
+        const newList = [...cart];
+        newList.splice(newList.indexOf(drug), 1);
+        setCart(newList);
+      }
+    }
+    if (cart.length === 0) {
+      document.getElementsById('items').style.display = "none";
     }
   }
 
@@ -75,20 +80,21 @@ function Medications() {
       <div className='shipping' style={{cursor: 'pointer'}} onClick={() => showQuote()}>
         <h3><i className="fas fa-quote-left"></i>{show ? `${quote} ${author}` : 'Click here to get inspirational quotes!'}<i className="fas fa-quote-right"></i></h3>
       </div>
-      <div className='gradient-text'>
-        <h1>A list of new medications.</h1>
+      <div className='container'><span className='opaque'>
+        <div className='gradient-text'>
+          <h1>Brand-new medications.</h1>
+        </div></span>
       </div>
       <div id='items' style={{display: 'none'}}>
         <ul>
           {cart.map((newElement => {
             const {name, id} = newElement;
             return(
-              <li key={newElement.id}><span><i className="fas fa-times" style={{cursor: 'pointer'}} onClick={() => removeItem(id)}></i></span>&nbsp;&nbsp;&nbsp;{name}</li>
+              <li key={newElement.id}><span><i className="fas fa-times" style={{cursor: 'pointer', color: '#d31334'}} onClick={() => removeItem(id)}></i></span>&nbsp;&nbsp;&nbsp;{name}</li>
             )
           }))}
         </ul>
       </div>
-      <br></br>
       <Buttons filteredMeds={chosenMeds} setWhatever={setMeds} whatever={meds} data={data} />
       <div className='list'>
         {meds.map((element => {

@@ -1,52 +1,58 @@
-import React, {useState, useEffect, useRef} from "react";
+import React, {useState} from "react";
+// import {useEffect, useRef} from 'react';
 import {links} from "./links";
-import {quotes} from './quotes';
+import axios from 'axios';
 import './App.css';
 
 function Ads() {
   const videos = links;
-  const delay = 2500;
+  // const delay = 2500;
   const [index, setIndex] = useState(0);
-  const timeoutRef = useRef(null);
+  // const timeoutRef = useRef(null);
   const [quote, setQuote] = useState();
+  const [author, setAuthor] = useState();
   const [show, setShow] = useState(false);
 
   const showQuote = () => {
+    axios.get('https://api.quotable.io/random')
+    .then(res => {
+      setQuote(res.data.content);
+      setAuthor(res.data.author);
+      console.log(quote);
+    })
     setShow(true);
-    setQuote((file => {
-      file = quotes[Math.floor(Math.random() * quotes.length)];
-      return file;
-    }))
   }
 
-  function resetTimeout() {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
-  }
+  // function resetTimeout() {
+  //   if (timeoutRef.current) {
+  //     clearTimeout(timeoutRef.current);
+  //   }
+  // }
 
-  useEffect(() => {
-    resetTimeout();
-    timeoutRef.current = setTimeout(
-      () =>
-        setIndex((prevIndex) =>
-          prevIndex === videos.length - 1 ? 0 : prevIndex + 1
-        ),
-      delay
-    );
+  // useEffect(() => {
+  //   resetTimeout();
+  //   timeoutRef.current = setTimeout(
+  //     () =>
+  //       setIndex((prevIndex) =>
+  //         prevIndex === videos.length - 1 ? 0 : prevIndex + 1
+  //       ),
+  //     delay
+  //   );
 
-    return () => {
-      resetTimeout();
-    };
-  });
+  //   return () => {
+  //     resetTimeout();
+  //   };
+  // });
 
   return (
     <div>
       <div className='shipping' style={{cursor: 'pointer'}} onClick={() => showQuote()}>
-        <i className="fas fa-quote-left"></i>{show ? `${quote.text} ${quote.author} ` : 'In skating over thin ice our safety is in our speed. Ralph Waldo Emerson'}<i className="fas fa-quote-right"></i>
+        <h3><i className="fas fa-quote-left"></i>{show ? `${quote} ${author}` : 'Click here to get inspirational quotes!'}<i className="fas fa-quote-right"></i></h3>
       </div>
-      <div className="gradient-text">
-        <h1>TV Ads and Commercials</h1>
+      <div className='container'><span className='opaque'>
+        <div className='gradient-text'>
+          <h1>TV Ads and Commercials</h1>
+        </div></span>
       </div>
       <div className="slideshow">
         <div
