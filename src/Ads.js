@@ -60,11 +60,9 @@ function Ads() {
           style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
         >
           {videos.map((videoLink, index) => (
-            <div className="slide" key={index} >
-              <iframe width="100%" height='400px' src={videoLink} title="YouTube video player" frameBorder="0"
+            <iframe className="slide" key={index} width="100%" height='400px' src={videoLink} title="YouTube video player" frameBorder="0" controlls='0'
               allow="accelerometer; clipboard-write; encrypted-media; gyroscope;"
-              ></iframe>
-            </div>
+            ></iframe>
           ))}
         </div>
 

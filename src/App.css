@@ -282,9 +282,8 @@ button:hover {
 
 .slide {
   display: inline-block;
-  height: 400px;
   width: 100%;
-  border-radius: 40px;
+  height: 400px;
 }
 
 /* Buttons */
@@ -490,7 +489,7 @@ textarea:hover {
   }
 
   img {
-    width: 120px;
+    width: 110px;
     height: auto;
   }
 
@@ -502,22 +501,22 @@ textarea:hover {
     background-size: 100%;
   }
 
-  .slide {
-    width: 90%;
+  .slideshow {
+    width: 95%;
   }
 
   .item {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 161px;
+    width: 155px;
   }
 
   textarea {
     width: 100%;
   }
 
-  form {
-    width: 450px;
+  #form {
+    width: 90%;
   }
 }
