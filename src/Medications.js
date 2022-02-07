@@ -1,26 +1,32 @@
 import React, {useState} from 'react';
 import {data} from './data';
+import {quotes} from './quotes';
 import Buttons from './Buttons';
 import './App.css';
 
 function Medications() {
   const [meds, setMeds] = useState(data);
   const [cart, setCart] = useState([]);
+  const [quote, setQuote] = useState();
+  const [show, setShow] = useState(false);
 
   const chosenMeds = (keyword) => {
     const newMeds = data.filter(element => element.keyword === keyword);
     setMeds(newMeds);
   }
 
+  const showQuote = () => {
+    setShow(true);
+    setQuote((file => {
+      file = quotes[Math.floor(Math.random() * quotes.length)];
+      return file;
+    }))
+  }
+
   const addItem = (id) => {
     const drug = data.find(drug => drug.id === id);
     if (!cart.includes(drug)) {
       setCart([...cart, drug]);
-    }
-    if (cart.includes(drug)) {
-      const newList = [...cart];
-      newList.splice(newList.indexOf(drug), 1);
-      setCart(newList);
     }
   }
 
@@ -35,6 +41,15 @@ function Medications() {
       }
     });
     setMeds(newMeds); 
+  }
+
+  const removeItem = (id) => {
+    const drug = data.find(drug => drug.id === id);
+    if (cart.includes(drug)) {
+      const newList = [...cart];
+      newList.splice(newList.indexOf(drug), 1);
+      setCart(newList);
+    }
   }
 
   const showList = () => {
@@ -52,19 +67,18 @@ function Medications() {
         <span><i id='icon' className="fas fa-shopping-cart"></i></span>
         <span className='badge'> {cart.length} </span>
       </div>
-      <div className='shipping'>
-          <i className="fas fa-truck flip"></i>&nbsp;FREE SHIPPING ON ORDERS OVER
-          $100!&nbsp;<i className="fas fa-truck"></i>
+      <div className='shipping' style={{cursor: 'pointer'}} onClick={() => showQuote()}>
+          <i className="fas fa-quote-left"></i>{show ? `${quote.text} ${quote.author} ` : 'In skating over thin ice our safety is in our speed. Ralph Waldo Emerson'}<i className="fas fa-quote-right"></i>
       </div>
       <div className='gradient-text'>
-        <h1>A list of <u>{meds.length}</u> brand-new medications.</h1>
+        <h1>A list of new medications.</h1>
       </div>
       <div id='items' style={{display: 'none'}}>
         <ul>
           {cart.map((newElement => {
-            const {name} = newElement;
+            const {name, id} = newElement;
             return(
-              <li key={newElement.id}><span><i className="fas fa-check"></i></span>&nbsp;&nbsp;&nbsp;{name}</li>
+              <li key={newElement.id}><span><i className="fas fa-times" style={{cursor: 'pointer'}} onClick={() => removeItem(id)}></i></span>&nbsp;&nbsp;&nbsp;{name}</li>
             )
           }))}
         </ul>

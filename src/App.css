@@ -18,6 +18,10 @@ body {
   cursor: pointer;
 }
 
+.fas {
+  margin: 0 0.5em;
+}
+
 .badge {
   position: absolute;
   top: -10px;
@@ -146,7 +150,7 @@ h1.gradient-text:hover {
 }
 
 span {
-  color: #2a5294;
+  color: #d31334;
 }
 
 p {
@@ -293,4 +297,160 @@ button:hover {
 
 .slideshowDot.active {
   background-color: #2a5294;
+}
+
+/* Contact Us */
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #fafafa;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #fafafa;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #fafafa;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #fafafa;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #2a5294;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #fafafa;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #fafafa;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #fafafa;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #e2dedb;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #e2dedb;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #e2dedb;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #e2dedb;
+}
+
+#form {
+  width: 534px;
+  max-width: 100%;
+  margin: 2em auto;
+  background: linear-gradient(0deg, rgba(153,131,201,1) 0%, rgba(128,198,255,1) 100%);
+}
+
+input {
+  font-family: 'Source Serif 4', sans-serif;
+  font-size: 1.25em;
+  font-weight: 700;
+  width: 500px;
+  max-width: 100%;
+  height: 50px;
+  padding: 0px 15px;
+  background: transparent;
+  outline: none;
+  color: #2a5294;
+  border: solid 2px #2a5294;
+  border-bottom: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background-color: #9983c9;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 500px;
+  max-width: 100%;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #fafafa;
+  font-family: 'Source Serif 4', sans-serif;
+  font-size: 1.25em;
+  font-weight: 700;
+  border: solid 2px #2a5294;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background-color: #9983c9;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 100%;
+  padding: 0px;
+  margin: -5px 0px 0px 0px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: #fafafa;
+  outline:none;
+  cursor: pointer;
+  border: solid 2px #2a5294;
+  border-top: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+#submit:hover {
+  background-color: #ff9999;
+  font-weight: bold;
+  letter-spacing: 3px;
+  /* color: #e2dedb; */
 }

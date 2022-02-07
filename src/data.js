@@ -543,5 +543,13 @@ export const data = [
     keyword: 'cancer',
     image: 'https://www.multivu.com/players/English/7733851-abbvie-venclexta-fda-approval/image/venclexta-logo-22-RSS.jpg',
     purpose: 'A prescription medicine used in combination with azacitidine, or decitabine, or low-dose cytarabine to treat adults with newly-diagnosed AML who are 75 years of age or older, or have other medical conditions that prevent the use of standard chemotherapy.'
+  },
+  {
+    id: 69,
+    name: 'Vraylar',
+    medical: 'cariprazine',
+    keyword: 'depression',
+    image: 'https://www.vraylar.com/-/media/project/vraylar/navigation/vraylar_logo_dt.ashx',
+    purpose: 'An atypical antipsychotic which is used in the treatment of schizophrenia, bipolar mania, and bipolar depression.'
   }
 ]
