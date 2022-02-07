@@ -43,7 +43,7 @@ function Ads() {
   return (
     <div>
       <div className='shipping' style={{cursor: 'pointer'}} onClick={() => showQuote()}>
-          <i className="fas fa-quote-left"></i>{show ? `${quote.text} ${quote.author} ` : 'In skating over thin ice our safety is in our speed. Ralph Waldo Emerson'}<i className="fas fa-quote-right"></i>
+        <i className="fas fa-quote-left"></i>{show ? `${quote.text} ${quote.author} ` : 'In skating over thin ice our safety is in our speed. Ralph Waldo Emerson'}<i className="fas fa-quote-right"></i>
       </div>
       <div className="gradient-text">
         <h1>TV Ads and Commercials</h1>

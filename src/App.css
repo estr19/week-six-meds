@@ -5,6 +5,11 @@ body {
   margin: 0;
   background-color: #fafafa;
   font-family: 'Source Serif 4', sans-serif;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .cart {
@@ -18,7 +23,8 @@ body {
   cursor: pointer;
 }
 
-.fas {
+.fa-quote-left,
+.fa-quote-right {
   margin: 0 0.5em;
 }
 
@@ -74,7 +80,8 @@ nav {
   padding: 1em;
 }
 
-.hidden {
+.hidden,
+#search {
   display: none;
 }
 
@@ -112,6 +119,7 @@ h1 {
 
 h3 {
   text-align: center;
+  margin: 0;
 }
 
 h1.gradient-text {
@@ -376,7 +384,7 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
 }
 
 #form {
-  width: 534px;
+  width: 500px;
   max-width: 100%;
   margin: 2em auto;
   background: linear-gradient(0deg, rgba(153,131,201,1) 0%, rgba(128,198,255,1) 100%);
@@ -386,7 +394,7 @@ input {
   font-family: 'Source Serif 4', sans-serif;
   font-size: 1.25em;
   font-weight: 700;
-  width: 500px;
+  width: 466px;
   max-width: 100%;
   height: 50px;
   padding: 0px 15px;
@@ -407,7 +415,7 @@ input:hover {
 }
 
 textarea {
-  width: 500px;
+  width: 466px;
   max-width: 100%;
   height: 110px;
   max-height: 110px;

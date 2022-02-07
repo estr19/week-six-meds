@@ -1,31 +1,36 @@
 import React, {useState} from 'react';
 import {data} from './data';
-import {quotes} from './quotes';
 import Buttons from './Buttons';
+import axios from 'axios';
 import './App.css';
 
 function Medications() {
   const [meds, setMeds] = useState(data);
   const [cart, setCart] = useState([]);
   const [quote, setQuote] = useState();
+  const [author, setAuthor] = useState();
   const [show, setShow] = useState(false);
 
   const chosenMeds = (keyword) => {
     const newMeds = data.filter(element => element.keyword === keyword);
     setMeds(newMeds);
+    document.getElementById('search').style.display = 'block';
   }
 
   const showQuote = () => {
+    axios.get('https://api.quotable.io/random')
+    .then(res => {
+      setQuote(res.data.content);
+      setAuthor(res.data.author);
+      console.log(quote);
+    })
     setShow(true);
-    setQuote((file => {
-      file = quotes[Math.floor(Math.random() * quotes.length)];
-      return file;
-    }))
   }
 
   const addItem = (id) => {
     const drug = data.find(drug => drug.id === id);
     if (!cart.includes(drug)) {
+      document.getElementById('items').style.display = "block";
       setCart([...cart, drug]);
     }
   }
@@ -68,7 +73,7 @@ function Medications() {
         <span className='badge'> {cart.length} </span>
       </div>
       <div className='shipping' style={{cursor: 'pointer'}} onClick={() => showQuote()}>
-          <i className="fas fa-quote-left"></i>{show ? `${quote.text} ${quote.author} ` : 'In skating over thin ice our safety is in our speed. Ralph Waldo Emerson'}<i className="fas fa-quote-right"></i>
+        <h3><i className="fas fa-quote-left"></i>{show ? `${quote} ${author}` : 'Click here to get inspirational quotes!'}<i className="fas fa-quote-right"></i></h3>
       </div>
       <div className='gradient-text'>
         <h1>A list of new medications.</h1>
@@ -84,7 +89,7 @@ function Medications() {
         </ul>
       </div>
       <br></br>
-      <Buttons filteredMeds={chosenMeds} setWhatever={setMeds} data={data} />
+      <Buttons filteredMeds={chosenMeds} setWhatever={setMeds} whatever={meds} data={data} />
       <div className='list'>
         {meds.map((element => {
           const {id, name, medical, image, purpose, showMore} = element;
