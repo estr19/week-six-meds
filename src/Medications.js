@@ -10,11 +10,38 @@ function Medications() {
   const [quote, setQuote] = useState();
   const [author, setAuthor] = useState();
   const [show, setShow] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
 
-  const chosenMeds = (keyword) => {
-    const newMeds = data.filter(element => element.keyword === keyword);
-    setMeds(newMeds);
+  // const chosenMeds = (keyword) => {
+  //   const newMeds = data.filter(element => element.keyword === keyword);
+  //   setMeds(newMeds);
+  //   document.getElementById('search').style.display = 'block';
+  // }
+
+  const isClicked = (e) => {
+    const checked = e.target.checked;
+    if (checked) {
+      console.log('checked!');
+      setIsChecked(true);
+    } else {
+      console.log('unchecked!');
+      setIsChecked(true);
+    }
+  }
+
+  const startOver = () => {
+    setMeds(data);
+    document.getElementById('search').style.display = 'none';
+  }
+
+  const multipleFilter = () => {
+    const checkedValues = [...document.querySelectorAll('.storesCheckBox')]
+      .filter(input => input.checked)
+      .map(input => input.value);
+    const filteredStores = data.filter(({ keyword }) => checkedValues.includes(keyword));
+    setMeds(filteredStores);
     document.getElementById('search').style.display = 'block';
+    console.log(filteredStores);
   }
 
   const showQuote = () => {
@@ -22,7 +49,6 @@ function Medications() {
     .then(res => {
       setQuote(res.data.content);
       setAuthor(res.data.author);
-      console.log(quote);
     })
     setShow(true);
   }
@@ -95,7 +121,7 @@ function Medications() {
           }))}
         </ul>
       </div>
-      <Buttons filteredMeds={chosenMeds} setWhatever={setMeds} whatever={meds} data={data} />
+     <Buttons multiFilter={multipleFilter} setWhatever={setMeds} startEver={startOver} clicked={isClicked} whatever={meds} data={data} checkClicked={isChecked} />  {/* filteredMeds={chosenMeds} */}
       <div className='list'>
         {meds.map((element => {
           const {id, name, medical, image, purpose, showMore} = element;
