@@ -195,10 +195,10 @@ h1.gradient-text:hover {
   margin: 1em 0;
 }
 
-.opaque {
+/* .opaque {
   padding: 0.5em;
   background-color: rgba(250, 250, 250, 0.75);
-}
+} */
 
 p {
   text-align: justify;
