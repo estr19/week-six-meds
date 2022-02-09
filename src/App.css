@@ -166,6 +166,13 @@ h1.gradient-text {
   -moz-text-fill-color: transparent;
   -o-text-fill-color: transparent;
   color: transparent;
+  -webkit-background: conic-gradient(
+    #b8b4e4 17%, 
+    #9983c9 17%, #9983c9 36%, 
+    #d2f787 36%, #d2f787 50%, 
+    #ff9999 50%, #ff9999 72%, 
+    #80c6ff 72%, #80c6ff 83%, 
+    #f2b38d 83%);
   background: conic-gradient(
     #b8b4e4 17%, 
     #9983c9 17%, #9983c9 36%, 
