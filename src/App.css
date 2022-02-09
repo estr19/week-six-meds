@@ -163,9 +163,9 @@ h1.gradient-text {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  -moz-text-fill-color: transparent;
-  -o-text-fill-color: transparent;
-  color: transparent;
+  -moz-text-fill-color: rgba(255, 255, 255, 0);;
+  -o-text-fill-color: rgba(255, 255, 255, 0);;
+  color: rgba(255, 255, 255, 0);;
   -webkit-background: conic-gradient(
     #b8b4e4 17%, 
     #9983c9 17%, #9983c9 36%, 
@@ -188,6 +188,9 @@ h1.gradient-text {
   -moz-background-clip: text;
   -o-background-clip: text;
   background-clip: text;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -o-transition: 1.5s;
   transition: 1.5s;
 }
 
