@@ -51,7 +51,7 @@ export const data = [
   {
     id: 7,
     name: 'Epclusa',
-    medical: 'Sofosbuvir velpatasvir',
+    medical: 'sofosbuvir velpatasvir',
     keyword: 'other',
     image: 'https://www.mixdexhq.com/wp-content/uploads/epclusa-logo.jpg',
     purpose: 'A prescription medicine used to treat adults with chronic hepatitis C (Hep C) genotype 1-6 infection with or without cirrhosis (compensated).'

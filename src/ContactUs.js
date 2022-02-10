@@ -17,6 +17,14 @@ function ContactUs() {
     setShow(true);
   }
 
+  const clearInput = () => {
+    window.onbeforeunload = () => {
+      for(const form of document.getElementsByTagName('form')) {
+        form.reset();
+      }
+    }
+  }
+
   return (
     <div>
       <div className='shipping' style={{cursor: 'pointer'}} onClick={() => showQuote()}>
@@ -29,13 +37,13 @@ function ContactUs() {
       </div>
       <div className="container">
         <form id="form" action="https://formspree.io/f/mgedarra" method="POST" className="topBefore opaque">
-          <label><span className='opaque' style={{textAlign: 'center'}}>NAME</span></label>
+          <label className="formLabel"><span className='opaque' style={{textAlign: 'center'}}>NAME</span></label>
           <input className='opaque' id="name" type="text" name="name" placeholder="your Name" required="" />
-          <label><span className='opaque'>E-MAIL</span></label>
+          <label className="formLabel"><span className='opaque'>E-MAIL</span></label>
           <input className='opaque' id="email" type="email" name="_replyto" placeholder="your e-mail" required="" />
-          <label><span className='opaque'>MESSAGE</span></label>
+          <label className="formLabel"><span className='opaque'>MESSAGE</span></label>
           <textarea className='opaque' id="message" type="text" name="message" placeholder="a brief message" required=""></textarea>
-          <input id="submit" type="submit" value="SUBMIT" />
+          <input id="submit" type="submit" value="SUBMIT" onClick={() => clearInput()}/>
         </form>
       </div>
     </div>

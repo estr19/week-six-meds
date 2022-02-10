@@ -10,7 +10,6 @@ function Medications() {
   const [quote, setQuote] = useState();
   const [author, setAuthor] = useState();
   const [show, setShow] = useState(false);
-  const [isChecked, setIsChecked] = useState(false);
 
   const startOver = () => {
     let checkboxes = document.getElementsByName('types');
@@ -19,21 +18,34 @@ function Medications() {
     }
     setMeds(data);
     document.getElementById("search").style.display = "none";
-  };
+  }
 
-  const multipleFilter = (e) => {
-    const checked = e.target.checked;
-    if (checked) {
-      setIsChecked(true);
-    } else {
-      setIsChecked(false);
-    }
+  const clickLabel = (e) => {
+    const checked = e.target;
+    checked.classList.toggle('checked');
+  }
+
+  const multipleFilter = () => {
     const checkedValues = [...document.querySelectorAll('.storesCheckBox')]
       .filter(input => input.checked)
       .map(input => input.value);
-    const filteredStores = data.filter(({ keyword }) => checkedValues.includes(keyword));
+    const filteredStores = data.filter(({keyword}) => checkedValues.includes(keyword));
+    // console.log(filteredStores);
     setMeds(filteredStores);
     document.getElementById('search').style.display = 'block';
+  }
+
+  const setShowMore = (id) => {
+    const newMeds = [];
+    meds.forEach(med => {
+      if (med.id === id) {
+        const changedMeds = {...med, showMore: !med.showMore};
+        newMeds.push(changedMeds);
+      } else {
+        newMeds.push(med);
+      }
+    });
+    setMeds(newMeds); 
   }
 
   const showQuote = () => {
@@ -52,19 +64,6 @@ function Medications() {
       document.getElementById('removeAll').style.display = "block";
       setCart([...cart, drug]);
     }
-  }
-
-  const setShowMore = (id) => {
-    const newMeds = [];
-    meds.forEach(med => {
-      if (med.id === id) {
-        const changedMeds = {...med, showMore: !med.showMore};
-        newMeds.push(changedMeds);
-      } else {
-        newMeds.push(med);
-      }
-    });
-    setMeds(newMeds); 
   }
 
   const removeItem = (id) => {
@@ -126,7 +125,7 @@ function Medications() {
           <h3><span className='opaque' >Empty cart</span></h3>
         </div>
       </div>
-     <Buttons multiFilter={multipleFilter} startEver={startOver} whatever={meds} data={data} checkClicked={isChecked} />  {/* filteredMeds={chosenMeds} */}
+     <Buttons multiFilter={multipleFilter} startEver={startOver} whatever={meds} data={data} clkLbl={clickLabel} />  {/* filteredMeds={chosenMeds} */}
       <div className='list'>
         {meds.map((element => {
           const {id, name, medical, image, purpose, showMore} = element;
@@ -143,7 +142,6 @@ function Medications() {
               </div>
               <div className='container'>
                 <p>{showMore ? purpose : purpose.substring(0, 90) + "..."}<span className="btn-more" onClick={() => setShowMore(id)}>{showMore ? ' collapse' : 'expand'}</span></p>
-                
               </div>
               <div className='container'>
                 <button onClick={() => addItem(id)}>Add to Cart</button>

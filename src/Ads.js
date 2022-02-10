@@ -1,17 +1,15 @@
 import React, {useState} from "react";
 // import {useEffect, useRef} from 'react';
-import {links} from "./links";
+import {videos} from "./videos";
 import axios from 'axios';
 import './App.css';
 
 function Ads() {
-  const videos = links;
-  // const delay = 2500;
-  const [index, setIndex] = useState(0);
-  // const timeoutRef = useRef(null);
   const [quote, setQuote] = useState();
   const [author, setAuthor] = useState();
   const [show, setShow] = useState(false);
+  const [file, setFile] = useState(0);
+  const {name, videoLink} = videos[file];
 
   const showQuote = () => {
     axios.get('https://api.quotable.io/random')
@@ -22,27 +20,25 @@ function Ads() {
     })
     setShow(true);
   }
+  const prevFile = () => {
+    setFile((file => {
+      file--;
+      if (file < 0) {
+        file = videos.length - 1;
+      }
+      return file;
+    }))
+  }
 
-  // function resetTimeout() {
-  //   if (timeoutRef.current) {
-  //     clearTimeout(timeoutRef.current);
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   resetTimeout();
-  //   timeoutRef.current = setTimeout(
-  //     () =>
-  //       setIndex((prevIndex) =>
-  //         prevIndex === videos.length - 1 ? 0 : prevIndex + 1
-  //       ),
-  //     delay
-  //   );
-
-  //   return () => {
-  //     resetTimeout();
-  //   };
-  // });
+  const nextFile = () => {
+    setFile((file => {
+      file++;
+      if (file > videos.length - 1) {
+        file = 0;
+      }
+      return file;
+    }))
+  }
 
   return (
     <div>
@@ -54,28 +50,18 @@ function Ads() {
           <h1>TV Ads and Commercials</h1>
         </div></span>
       </div>
-      <div className="slideshow">
-        <div
-          className="slideshowSlider"
-          style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-        >
-          {videos.map((videoLink, index) => (
-            <iframe className="slide" key={index} width="100%" height='400px' src={videoLink} title="YouTube video player" frameBorder="0" controlls='0'
-              allow="accelerometer; clipboard-write; encrypted-media; gyroscope;"
+      <div className='slideshow'>
+        <div className='slideshowSlider'>
+          <div className='container'>
+          <iframe className="slide" width="100%" height='400px' src={videoLink} title="YouTube video player" frameBorder="0" controlls='0'
+            allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope;"
             ></iframe>
-          ))}
-        </div>
-
-        <div className="slideshowDots">
-          {videos.map((_, idx) => (
-            <div
-              key={idx}
-              className={`slideshowDot${index === idx ? " active" : ""}`}
-              onClick={() => {
-                setIndex(idx);
-              }}
-            ></div>
-          ))}
+          </div>
+          <div className='container' style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', backgroundColor: 'rgba(250, 250, 250, 0.75)', padding: '1em', margin: '1em'}}>
+            <button onClick={() => prevFile()}>Prev</button>
+            <p style={{fontSize: '3em', fontWeight: 'bold', margin: '.5em'}}>{name}</p>
+            <button onClick={() => nextFile()}>Next</button>
+          </div>
         </div>
       </div>
     </div>

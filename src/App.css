@@ -165,21 +165,28 @@ h1.gradient-text {
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   -moz-text-fill-color: rgba(255, 255, 255, 0);;
   -o-text-fill-color: rgba(255, 255, 255, 0);;
-  color: rgba(255, 255, 255, 0);;
-  -webkit-background: conic-gradient(
-    #b8b4e4 17%, 
-    #9983c9 17%, #9983c9 36%, 
-    #d2f787 36%, #d2f787 50%, 
-    #ff9999 50%, #ff9999 72%, 
-    #80c6ff 72%, #80c6ff 83%, 
-    #f2b38d 83%);
+  color: rgba(255, 255, 255, 0);
+  background: conic-gradient( from 90deg at 50% 50%,
+    #b8b4e4 0deg 61.2deg,
+    #9983c9 61.2deg 129.6deg,
+    #d2f787 129.6deg 180deg,
+    #ff9999 180deg 259.2deg,
+    #80c6ff 259.2deg 298.8deg,
+    #f2b38d 298.8deg 360deg);
   background: conic-gradient(
+    #b8b4e4 0deg 61.2deg,
+    #9983c9 61.2deg 129.6deg,
+    #d2f787 129.6deg 180deg,
+    #ff9999 180deg 259.2deg,
+    #80c6ff 259.2deg 298.8deg,
+    #f2b38d 298.8deg 360deg);
+  /* background: conic-gradient(
     #b8b4e4 17%, 
     #9983c9 17%, #9983c9 36%, 
     #d2f787 36%, #d2f787 50%, 
     #ff9999 50%, #ff9999 72%, 
     #80c6ff 72%, #80c6ff 83%, 
-    #f2b38d 83%);
+    #f2b38d 83%); */
   -webkit-background-size: 50%;
   -moz-background-size: 50%;
   -o-background-size: 50%;
@@ -261,7 +268,7 @@ button:hover {
   height: 0;
 }
 
-label.filtered {
+.filtered {
   text-align: center;
   background-color: #FFCBCB;
   border: none;
@@ -272,7 +279,7 @@ label.filtered {
   width: auto;
   font-size: 1em;
   font-weight: bold;
-  padding: 1em 1em 1em 1.25em;
+  padding: 1em;
   margin: .5em;
   text-transform: uppercase;
   transition: 0.7s;
@@ -281,50 +288,40 @@ label.filtered {
                    2px 2px 3px 0px rgba(0,0,0,.1);
 }
 
-label.filtered:hover {
+/* .filtered:hover {
   background-color: #B5DEFF;
   color: #d31334;
-  box-shadow:  2px 2px 3px 0 rgba(255,255,255,.5),
-              -2px -2px 3px 0 rgba(116, 125, 136, .2), 
-        inset -2px -2px 3px 0 rgba(255,255,255,.5),
-        inset  2px 2px 3px 0 rgba(116, 125, 136, .3);
-}
-
-/* .checked input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-label.checked {
-  text-align: center;
-  background-color: #B5DEFF;
-  color: #d31334;
-  border: none;
-  border-radius: 1em;
-  color: #d31334;
-  cursor: pointer;
-  height: auto;
-  width: auto;
-  font-size: 1em;
-  font-weight: bold;
-  padding: 1em 1em 1em 1.25em;
-  margin: .5em;
-  text-transform: uppercase;
-  transition: 0.7s;
-  box-shadow: inset 1px 1px 1px 0px rgba(255,255,255,.5),
-                   4px 4px 15px 0px rgba(0,0,0,.1),
-                   2px 2px 3px 0px rgba(0,0,0,.1);
-}
-
-label.filtered:hover {
-  background-color: #FFCBCB;
-  color: #2a5294;
   box-shadow:  2px 2px 3px 0 rgba(255,255,255,.5),
               -2px -2px 3px 0 rgba(116, 125, 136, .2), 
         inset -2px -2px 3px 0 rgba(255,255,255,.5),
         inset  2px 2px 3px 0 rgba(116, 125, 136, .3);
 } */
+
+.checked input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checked {
+  text-align: center;
+  background-color: #B5DEFF;
+  border: none;
+  border-radius: 1em;
+  color: #d31334;
+  cursor: pointer;
+  height: auto;
+  width: auto;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 1em 2em 1em 1em;
+  margin: .5em;
+  text-transform: uppercase;
+  box-shadow:  2px 2px 3px 0 rgba(255,255,255,.5),
+              -2px -2px 3px 0 rgba(116, 125, 136, .2), 
+        inset -2px -2px 3px 0 rgba(255,255,255,.5),
+        inset  2px 2px 3px 0 rgba(116, 125, 136, .3);
+}
 
 .special {
   background-color: #d2f787;
@@ -493,7 +490,7 @@ input:hover:focus::-ms-placeholder, textarea:hover:focus:-ms-placeholder {
   /* border: 10px outset #2a5294; */
 }
 
-label {
+.formLabel {
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-size: 1.25em;
