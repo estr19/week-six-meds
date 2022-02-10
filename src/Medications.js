@@ -12,36 +12,28 @@ function Medications() {
   const [show, setShow] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
 
-  // const chosenMeds = (keyword) => {
-  //   const newMeds = data.filter(element => element.keyword === keyword);
-  //   setMeds(newMeds);
-  //   document.getElementById('search').style.display = 'block';
-  // }
+  const startOver = () => {
+    let checkboxes = document.getElementsByName('types');
+    for (let checkbox of checkboxes) {
+        checkbox.checked = false;
+    }
+    setMeds(data);
+    document.getElementById("search").style.display = "none";
+  };
 
-  const isClicked = (e) => {
+  const multipleFilter = (e) => {
     const checked = e.target.checked;
     if (checked) {
-      console.log('checked!');
       setIsChecked(true);
     } else {
-      console.log('unchecked!');
-      setIsChecked(true);
+      setIsChecked(false);
     }
-  }
-
-  const startOver = () => {
-    setMeds(data);
-    document.getElementById('search').style.display = 'none';
-  }
-
-  const multipleFilter = () => {
     const checkedValues = [...document.querySelectorAll('.storesCheckBox')]
       .filter(input => input.checked)
       .map(input => input.value);
     const filteredStores = data.filter(({ keyword }) => checkedValues.includes(keyword));
     setMeds(filteredStores);
     document.getElementById('search').style.display = 'block';
-    console.log(filteredStores);
   }
 
   const showQuote = () => {
@@ -57,6 +49,7 @@ function Medications() {
     const drug = data.find(drug => drug.id === id);
     if (!cart.includes(drug)) {
       document.getElementById('items').style.display = "block";
+      document.getElementById('removeAll').style.display = "block";
       setCart([...cart, drug]);
     }
   }
@@ -84,7 +77,7 @@ function Medications() {
       }
     }
     if (cart.length === 0) {
-      document.getElementsById('items').style.display = "none";
+      document.getElementById('items').style.display = "none";
     }
   }
 
@@ -95,6 +88,12 @@ function Medications() {
       } else {
         x.style.display = "none";
       }
+  }
+
+  const removeAll = () => {
+    setCart([]);
+    document.getElementById('removeAll').style.display = "none";
+    document.getElementById('items').style.display = "none";
   }
 
   return(
@@ -112,6 +111,9 @@ function Medications() {
         </div></span>
       </div>
       <div id='items' style={{display: 'none'}}>
+        <div style={{backgroundColor: 'rgba(250, 250, 250, 0.5)', padding: '1em', margin: '1em'}} className='container'>
+          <h3><span className='opaque' >Here are the items you have selected:</span></h3>
+        </div>
         <ul>
           {cart.map((newElement => {
             const {name, id} = newElement;
@@ -120,8 +122,11 @@ function Medications() {
             )
           }))}
         </ul>
+        <div id='removeAll' style={{display: 'none', backgroundColor: 'rgba(250, 250, 250, 0.5)', padding: '1em', margin: '1em 9em', cursor: 'pointer'}} className='container' onClick={() => removeAll()}>
+          <h3><span className='opaque' >Empty cart</span></h3>
+        </div>
       </div>
-     <Buttons multiFilter={multipleFilter} setWhatever={setMeds} startEver={startOver} clicked={isClicked} whatever={meds} data={data} checkClicked={isChecked} />  {/* filteredMeds={chosenMeds} */}
+     <Buttons multiFilter={multipleFilter} startEver={startOver} whatever={meds} data={data} checkClicked={isChecked} />  {/* filteredMeds={chosenMeds} */}
       <div className='list'>
         {meds.map((element => {
           const {id, name, medical, image, purpose, showMore} = element;

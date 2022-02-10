@@ -110,7 +110,7 @@ nav {
   background-color: rgba(250, 250, 250, 0.5);
   display: none;
   padding: 1em;
-  margin: 1em 0;
+  margin: 1em;
 }
 
 .link {
@@ -290,14 +290,41 @@ label.filtered:hover {
         inset  2px 2px 3px 0 rgba(116, 125, 136, .3);
 }
 
-.checked {
+/* .checked input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+label.checked {
+  text-align: center;
   background-color: #B5DEFF;
   color: #d31334;
+  border: none;
+  border-radius: 1em;
+  color: #d31334;
+  cursor: pointer;
+  height: auto;
+  width: auto;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 1em 1em 1em 1.25em;
+  margin: .5em;
+  text-transform: uppercase;
+  transition: 0.7s;
+  box-shadow: inset 1px 1px 1px 0px rgba(255,255,255,.5),
+                   4px 4px 15px 0px rgba(0,0,0,.1),
+                   2px 2px 3px 0px rgba(0,0,0,.1);
+}
+
+label.filtered:hover {
+  background-color: #FFCBCB;
+  color: #2a5294;
   box-shadow:  2px 2px 3px 0 rgba(255,255,255,.5),
               -2px -2px 3px 0 rgba(116, 125, 136, .2), 
         inset -2px -2px 3px 0 rgba(255,255,255,.5),
         inset  2px 2px 3px 0 rgba(116, 125, 136, .3);
-}
+} */
 
 .special {
   background-color: #d2f787;
