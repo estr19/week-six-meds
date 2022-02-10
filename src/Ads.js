@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-// import {useEffect, useRef} from 'react';
 import {videos} from "./videos";
 import axios from 'axios';
 import './App.css';

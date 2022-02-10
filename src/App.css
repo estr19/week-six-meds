@@ -271,6 +271,7 @@ button:hover {
 .filtered {
   text-align: center;
   background-color: #FFCBCB;
+  font-family: 'Poppins', sans-serif;
   border: none;
   border-radius: 1em;
   color: #2a5294;
@@ -279,7 +280,7 @@ button:hover {
   width: auto;
   font-size: 1em;
   font-weight: bold;
-  padding: 1em;
+  padding: 1em 1.25em 1em 0.75em;
   margin: .5em;
   text-transform: uppercase;
   transition: 0.7s;
@@ -304,19 +305,8 @@ button:hover {
 }
 
 .checked {
-  text-align: center;
   background-color: #B5DEFF;
-  border: none;
-  border-radius: 1em;
   color: #d31334;
-  cursor: pointer;
-  height: auto;
-  width: auto;
-  font-size: 1em;
-  font-weight: bold;
-  padding: 1em 2em 1em 1em;
-  margin: .5em;
-  text-transform: uppercase;
   box-shadow:  2px 2px 3px 0 rgba(255,255,255,.5),
               -2px -2px 3px 0 rgba(116, 125, 136, .2), 
         inset -2px -2px 3px 0 rgba(255,255,255,.5),
