@@ -34,7 +34,6 @@ function Medications() {
       .filter(input => input.checked)
       .map(input => input.value);
     const filteredStores = data.filter(({keyword}) => checkedValues.includes(keyword));
-    // console.log(filteredStores);
     setMeds(filteredStores);
     document.getElementById('search').style.display = 'block';
   }
@@ -72,15 +71,13 @@ function Medications() {
 
   const removeItem = (id) => {
     const drug = data.find(drug => drug.id === id);
-    if (cart.length > 0) {
-      if (cart.includes(drug)) {
-        const newList = [...cart];
-        newList.splice(newList.indexOf(drug), 1);
-        setCart(newList);
+    if (cart.includes(drug)) {
+      const newList = [...cart];
+      newList.splice(newList.indexOf(drug), 1);
+      setCart(newList);
+      if (cart.length -1 === 0) {
+        document.getElementById('items').style.display = "none";
       }
-    }
-    if (cart.length === 0) {
-      document.getElementById('items').style.display = "none";
     }
   }
 
