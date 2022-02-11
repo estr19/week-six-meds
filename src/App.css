@@ -94,11 +94,25 @@ li {
   font-size: 1.5em;
 }
 
-nav {
+.top {
   background: linear-gradient(0deg, rgba(128,198,255,1) 0%, rgba(153,131,201,1) 100%);
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  padding: 1em;
+}
+
+.bottom {
+  background: linear-gradient(0deg, rgba(153,131,201,1) 0%, rgba(128,198,255,1) 100%);
+  padding: 1em;
+}
+
+.disclaimer {
+  background-color: #ff9999;
+  text-align: center;
+  color: black;
+  border: 2px solid #FFCBCB;
+  font-weight: 700;
   padding: 1em;
 }
 
@@ -166,7 +180,7 @@ h1.gradient-text {
   -moz-text-fill-color: rgba(255, 255, 255, 0);;
   -o-text-fill-color: rgba(255, 255, 255, 0);;
   color: rgba(255, 255, 255, 0);
-  background: conic-gradient( from 90deg at 50% 50%,
+  -webkit-background: conic-gradient( from 90deg at 50% 50%,
     #b8b4e4 0deg 61.2deg,
     #9983c9 61.2deg 129.6deg,
     #d2f787 129.6deg 180deg,
@@ -289,15 +303,6 @@ button:hover {
                    2px 2px 3px 0px rgba(0,0,0,.1);
 }
 
-/* .filtered:hover {
-  background-color: #B5DEFF;
-  color: #d31334;
-  box-shadow:  2px 2px 3px 0 rgba(255,255,255,.5),
-              -2px -2px 3px 0 rgba(116, 125, 136, .2), 
-        inset -2px -2px 3px 0 rgba(255,255,255,.5),
-        inset  2px 2px 3px 0 rgba(116, 125, 136, .3);
-} */
-
 .checked input {
   opacity: 0;
   width: 0;
@@ -311,10 +316,6 @@ button:hover {
               -2px -2px 3px 0 rgba(116, 125, 136, .2), 
         inset -2px -2px 3px 0 rgba(255,255,255,.5),
         inset  2px 2px 3px 0 rgba(116, 125, 136, .3);
-}
-
-.special {
-  background-color: #d2f787;
 }
 
 .header {
@@ -366,28 +367,6 @@ button:hover {
   display: inline-block;
   width: 100%;
   height: 400px;
-}
-
-/* Buttons */
-
-.slideshowDots {
-  text-align: center;
-  outline: none;
-}
-
-.slideshowDot {
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  margin: 15px 7px 0px;
-  background-color: #c4c4c4;
-  border: 1px solid #2a5294;
-}
-
-.slideshowDot.active {
-  background-color: #2a5294;
 }
 
 /* Contact Us */
@@ -477,7 +456,6 @@ input:hover:focus::-ms-placeholder, textarea:hover:focus:-ms-placeholder {
   padding: 1em 0.5em;
   margin: 2em auto;
   background: linear-gradient(0deg, #ff9999 0%, #d2f787 100%);
-  /* border: 10px outset #2a5294; */
 }
 
 .formLabel {
@@ -562,7 +540,6 @@ textarea:hover {
   background-color: #d2f787;
   font-weight: bold;
   letter-spacing: 5px;
-  /* color: #e2dedb; */
 }
 
 @media all and (max-width: 500px) {
@@ -575,7 +552,7 @@ textarea:hover {
     height: auto;
   }
 
-  nav {
+  .top {
     justify-content: flex-start;
   }
 

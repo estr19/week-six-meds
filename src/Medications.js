@@ -13,8 +13,12 @@ function Medications() {
 
   const startOver = () => {
     let checkboxes = document.getElementsByName('types');
+    const labels = document.querySelectorAll('label');
+    labels.forEach(item => {
+      item.classList.remove('checked');
+    });
     for (let checkbox of checkboxes) {
-        checkbox.checked = false;
+      checkbox.checked = false;
     }
     setMeds(data);
     document.getElementById("search").style.display = "none";
@@ -89,7 +93,7 @@ function Medications() {
       }
   }
 
-  const removeAll = () => {
+  const emptyCart = () => {
     setCart([]);
     document.getElementById('removeAll').style.display = "none";
     document.getElementById('items').style.display = "none";
@@ -121,7 +125,7 @@ function Medications() {
             )
           }))}
         </ul>
-        <div id='removeAll' style={{display: 'none', backgroundColor: 'rgba(250, 250, 250, 0.5)', padding: '1em', margin: '1em 9em', cursor: 'pointer'}} className='container' onClick={() => removeAll()}>
+        <div id='removeAll' style={{display: 'none', backgroundColor: 'rgba(250, 250, 250, 0.5)', padding: '1em', margin: '1em 9em', cursor: 'pointer'}} className='container' onClick={() => emptyCart()}>
           <h3><span className='opaque' >Empty cart</span></h3>
         </div>
       </div>

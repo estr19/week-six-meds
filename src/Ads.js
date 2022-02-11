@@ -52,7 +52,7 @@ function Ads() {
       <div className='slideshow'>
         <div className='slideshowSlider'>
           <div className='container'>
-          <iframe className="slide" width="100%" height='400px' src={videoLink} title="YouTube video player" frameBorder="0" controlls='0'
+          <iframe className='slide' width='100%' height='400px' src={videoLink} title="YouTube video player" frameBorder='0' controlls='0'
             allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope;"
             ></iframe>
           </div>

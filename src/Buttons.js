@@ -5,7 +5,7 @@ function Buttons({multiFilter, clkLbl, whatever, startEver}) {
   return(
     <div>
       <div className='btn header'>
-        <button className='special' onClick={() => startEver()}>Clear All</button>
+        <button style={{backgroundColor: '#d2f787'}} onClick={() => startEver()}>Clear All</button>
         <label onClick={(e) => clkLbl(e)} className='filtered' htmlFor='breathing' ><input type="checkbox" id='breathing' name="types" value="breathing" className="storesCheckBox" onClick={() => multiFilter()} />Breathing</label>
         <label onClick={(e) => clkLbl(e)} className='filtered' htmlFor='cancer' ><input type="checkbox" id='cancer' name="types" value="cancer" className="storesCheckBox" onClick={() => multiFilter()} />Cancer</label>
         <label onClick={(e) => clkLbl(e)} className='filtered' htmlFor='depression' ><input type="checkbox" id='depression' name="types" value="depression" className="storesCheckBox" onClick={() => multiFilter()} />Depression</label>
