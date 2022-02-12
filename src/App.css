@@ -168,40 +168,16 @@ h3 {
 
 h1.gradient-text {
   font-size: 5em;
-  margin: 0.25em;
+  margin: 0em;
 }
 
 .gradient-text {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   width: 100%;
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  -moz-text-fill-color: rgba(255, 255, 255, 0);
-  -o-text-fill-color: rgba(255, 255, 255, 0);
   color: rgba(255, 255, 255, 0);
-  -webkit-background-image: conic-gradient( from 90deg at 50% 50%,
-    #b8b4e4 0deg 61.2deg,
-    #9983c9 61.2deg 129.6deg,
-    #d2f787 129.6deg 180deg,
-    #ff9999 180deg 259.2deg,
-    #80c6ff 259.2deg 298.8deg,
-    #f2b38d 298.8deg 360deg);
-  background-image: conic-gradient(
-    #b8b4e4 0deg 61.2deg,
-    #9983c9 61.2deg 129.6deg,
-    #d2f787 129.6deg 180deg,
-    #ff9999 180deg 259.2deg,
-    #80c6ff 259.2deg 298.8deg,
-    #f2b38d 298.8deg 360deg);
-  -webkit-background: conic-gradient(
-    #b8b4e4 17%, 
-    #9983c9 17%, #9983c9 36%, 
-    #d2f787 36%, #d2f787 50%, 
-    #ff9999 50%, #ff9999 72%, 
-    #80c6ff 72%, #80c6ff 83%, 
-    #f2b38d 83%);
   background: conic-gradient(
     #b8b4e4 17%, 
     #9983c9 17%, #9983c9 36%, 
@@ -209,28 +185,9 @@ h1.gradient-text {
     #ff9999 50%, #ff9999 72%, 
     #80c6ff 72%, #80c6ff 83%, 
     #f2b38d 83%);
-  background-image: conic-gradient(
-    #b8b4e4 17%, 
-    #9983c9 17%, #9983c9 36%, 
-    #d2f787 36%, #d2f787 50%, 
-    #ff9999 50%, #ff9999 72%, 
-    #80c6ff 72%, #80c6ff 83%, 
-    #f2b38d 83%);
-  -webkit-background-image: conic-gradient(
-    #b8b4e4 17%, 
-    #9983c9 17%, #9983c9 36%, 
-    #d2f787 36%, #d2f787 50%, 
-    #ff9999 50%, #ff9999 72%, 
-    #80c6ff 72%, #80c6ff 83%, 
-    #f2b38d 83%);
-  -webkit-background-size: 50%;
-  -moz-background-size: 50%;
-  -o-background-size: 50%;
   background-size: 50%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -o-background-clip: text;
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-transition: 1.5s;
   -moz-transition: 1.5s;
   -o-transition: 1.5s;

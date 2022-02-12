@@ -11,10 +11,10 @@ function ContactUs() {
 
   return (
     <div>
-      <div className='container'><span className='opaque'>
-        <div className='gradient-text'>
-          <h1>Contact Us</h1>
-        </div></span>
+      <div className='container'>
+        <span className='opaque' style={{padding: '2em 0.5em'}}>
+          <h1 className='gradient-text'>Contact Us!</h1>
+        </span>
       </div>
       <div className="container">
         <form id="form" action="https://formspree.io/f/mgedarra" method="POST" className="topBefore opaque">

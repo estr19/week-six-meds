@@ -90,10 +90,10 @@ function Medications() {
         <span><i id='icon' className="fas fa-shopping-cart"></i></span>
         <span className='badge'> {cart.length} </span>
       </div>
-      <div className='container'><span className='opaque'>
-        <div className='gradient-text'>
-          <h1>Brand-new medications.</h1>
-        </div></span>
+      <div className='container'>
+        <span className='opaque' style={{padding: '2em 0.5em'}}>
+          <h1 className='gradient-text'>Discover new medications.</h1>
+        </span>
       </div>
       <div id='items' style={{display: 'none'}}>
         <div style={{backgroundColor: 'rgba(250, 250, 250, 0.5)', padding: '1em', margin: '1em'}} className='container'>
