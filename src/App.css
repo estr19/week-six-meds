@@ -4,34 +4,35 @@
 body {
   margin: 0;
   font-family: 'Source Serif 4', sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80');
   -webkit-background-image: url('https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80');
   -moz-background-image: url('https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80');
   -o-background-image: url('https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80');
-  background-image: url('https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80'); /*  url('https://images.unsplash.com/photo-1631549916768-4119b2e5f926?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1179&q=80')  no-repeat center center fixed*/
+   /*  url('https://images.unsplash.com/photo-1631549916768-4119b2e5f926?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1179&q=80')  no-repeat center center fixed*/
+  background-color: #ccc5c5;
   -webkit-background-color: #ccc5c5;
   -moz-background-color: #ccc5c5;
   -o-background-color: #ccc5c5;
-  background-color: #ccc5c5;
+  background-repeat: no-repeat;
   -webkit-background-repeat: no-repeat;
   -moz-background-repeat: no-repeat;
   -o-background-repeat: no-repeat;
-  background-repeat: no-repeat;
+  background-position: center center;
   -webkit-background-position: center center;
   -moz-background-position: center center;
   -o-background-position: center center;
-  background-position: center center;
+  background-attachment: fixed;
   -webkit-background-attachment: fixed;
   -moz-background-attachment: fixed;
   -o-background-attachment: fixed;
-  background-attachment: fixed;
+  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-blend-mode: soft-light;
   -webkit-background-blend-mode: soft-light;
   -moz-background-blend-mode: soft-light;
   -o-background-blend-mode: soft-light;
-  background-blend-mode: soft-light;
 }
 
 .cart {
@@ -177,10 +178,17 @@ h1.gradient-text {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  -moz-text-fill-color: rgba(255, 255, 255, 0);;
-  -o-text-fill-color: rgba(255, 255, 255, 0);;
+  -moz-text-fill-color: rgba(255, 255, 255, 0);
+  -o-text-fill-color: rgba(255, 255, 255, 0);
   color: rgba(255, 255, 255, 0);
-  -webkit-background-image: conic-gradient( from 90deg at 50% 50%,
+  background-image: conic-gradient(
+    #b8b4e4 17%, 
+    #9983c9 17%, #9983c9 36%, 
+    #d2f787 36%, #d2f787 50%, 
+    #ff9999 50%, #ff9999 72%, 
+    #80c6ff 72%, #80c6ff 83%, 
+    #f2b38d 83%);
+  -webkit-background: conic-gradient(from 90deg at 50% 50%,
     #b8b4e4 0deg 61.2deg,
     #9983c9 61.2deg 129.6deg,
     #d2f787 129.6deg 180deg,
@@ -194,32 +202,25 @@ h1.gradient-text {
     #ff9999 50%, #ff9999 72%, 
     #80c6ff 72%, #80c6ff 83%, 
     #f2b38d 83%);
-  /* background: conic-gradient(
+  background: conic-gradient(
     #b8b4e4 0deg 61.2deg,
     #9983c9 61.2deg 129.6deg,
     #d2f787 129.6deg 180deg,
     #ff9999 180deg 259.2deg,
     #80c6ff 259.2deg 298.8deg,
-    #f2b38d 298.8deg 360deg); */
-  background-image: conic-gradient(
-    #b8b4e4 17%, 
-    #9983c9 17%, #9983c9 36%, 
-    #d2f787 36%, #d2f787 50%, 
-    #ff9999 50%, #ff9999 72%, 
-    #80c6ff 72%, #80c6ff 83%, 
-    #f2b38d 83%);
+    #f2b38d 298.8deg 360deg);
+  background-size: 50%;
   -webkit-background-size: 50%;
   -moz-background-size: 50%;
   -o-background-size: 50%;
-  background-size: 50%;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -o-background-clip: text;
-  background-clip: text;
+  transition: 1.5s;
   -webkit-transition: 1.5s;
   -moz-transition: 1.5s;
   -o-transition: 1.5s;
-  transition: 1.5s;
 }
 
 .gradient-text:hover,
