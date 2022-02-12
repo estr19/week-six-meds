@@ -1,15 +1,12 @@
 import React, {useState} from 'react';
 import {data} from './data';
 import Buttons from './Buttons';
-import axios from 'axios';
 import './App.css';
+// import Cart from './Cart';
 
 function Medications() {
   const [meds, setMeds] = useState(data);
   const [cart, setCart] = useState([]);
-  const [quote, setQuote] = useState();
-  const [author, setAuthor] = useState();
-  const [show, setShow] = useState(false);
 
   const startOver = () => {
     let checkboxes = document.getElementsByName('types');
@@ -49,15 +46,6 @@ function Medications() {
       }
     });
     setMeds(newMeds); 
-  }
-
-  const showQuote = () => {
-    axios.get('https://api.quotable.io/random')
-    .then(res => {
-      setQuote(res.data.content);
-      setAuthor(res.data.author);
-    })
-    setShow(true);
   }
 
   const addItem = (id) => {
@@ -102,9 +90,6 @@ function Medications() {
         <span><i id='icon' className="fas fa-shopping-cart"></i></span>
         <span className='badge'> {cart.length} </span>
       </div>
-      <div className='shipping' style={{cursor: 'pointer'}} onClick={() => showQuote()}>
-        <h3><i className="fas fa-quote-left"></i>{show ? `${quote} ${author}` : 'Click here to get inspirational quotes!'}<i className="fas fa-quote-right"></i></h3>
-      </div>
       <div className='container'><span className='opaque'>
         <div className='gradient-text'>
           <h1>Brand-new medications.</h1>
@@ -126,7 +111,10 @@ function Medications() {
           <h3><span className='opaque' >Empty cart</span></h3>
         </div>
       </div>
-     <Buttons multiFilter={multipleFilter} startEver={startOver} whatever={meds} data={data} clkLbl={clickLabel} />  {/* filteredMeds={chosenMeds} */}
+      {/* <div>
+        <Cart medCart={cart} setMedCart={setCart} />
+      </div> */}
+      <Buttons multiFilter={multipleFilter} startEver={startOver} whatever={meds} data={data} clkLbl={clickLabel} />  {/* filteredMeds={chosenMeds} */}
       <div className='list'>
         {meds.map((element => {
           const {id, name, medical, image, purpose, showMore} = element;

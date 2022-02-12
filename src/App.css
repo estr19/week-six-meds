@@ -180,27 +180,34 @@ h1.gradient-text {
   -moz-text-fill-color: rgba(255, 255, 255, 0);;
   -o-text-fill-color: rgba(255, 255, 255, 0);;
   color: rgba(255, 255, 255, 0);
-  -webkit-background: conic-gradient( from 90deg at 50% 50%,
+  -webkit-background-image: conic-gradient( from 90deg at 50% 50%,
     #b8b4e4 0deg 61.2deg,
     #9983c9 61.2deg 129.6deg,
     #d2f787 129.6deg 180deg,
     #ff9999 180deg 259.2deg,
     #80c6ff 259.2deg 298.8deg,
     #f2b38d 298.8deg 360deg);
-  background: conic-gradient(
-    #b8b4e4 0deg 61.2deg,
-    #9983c9 61.2deg 129.6deg,
-    #d2f787 129.6deg 180deg,
-    #ff9999 180deg 259.2deg,
-    #80c6ff 259.2deg 298.8deg,
-    #f2b38d 298.8deg 360deg);
-  /* background: conic-gradient(
+  -webkit-background-image: conic-gradient(
     #b8b4e4 17%, 
     #9983c9 17%, #9983c9 36%, 
     #d2f787 36%, #d2f787 50%, 
     #ff9999 50%, #ff9999 72%, 
     #80c6ff 72%, #80c6ff 83%, 
-    #f2b38d 83%); */
+    #f2b38d 83%);
+  /* background: conic-gradient(
+    #b8b4e4 0deg 61.2deg,
+    #9983c9 61.2deg 129.6deg,
+    #d2f787 129.6deg 180deg,
+    #ff9999 180deg 259.2deg,
+    #80c6ff 259.2deg 298.8deg,
+    #f2b38d 298.8deg 360deg); */
+  background-image: conic-gradient(
+    #b8b4e4 17%, 
+    #9983c9 17%, #9983c9 36%, 
+    #d2f787 36%, #d2f787 50%, 
+    #ff9999 50%, #ff9999 72%, 
+    #80c6ff 72%, #80c6ff 83%, 
+    #f2b38d 83%);
   -webkit-background-size: 50%;
   -moz-background-size: 50%;
   -o-background-size: 50%;
@@ -477,7 +484,6 @@ input {
   font-size: 1.25em;
   font-weight: 700;
   width: 70%;
-  height: 50px;
   background: transparent;
   outline: none;
   color: #2a5294;

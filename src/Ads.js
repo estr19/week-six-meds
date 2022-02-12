@@ -1,24 +1,11 @@
 import React, {useState} from "react";
 import {videos} from "./videos";
-import axios from 'axios';
 import './App.css';
 
 function Ads() {
-  const [quote, setQuote] = useState();
-  const [author, setAuthor] = useState();
-  const [show, setShow] = useState(false);
   const [file, setFile] = useState(0);
   const {name, videoLink} = videos[file];
 
-  const showQuote = () => {
-    axios.get('https://api.quotable.io/random')
-    .then(res => {
-      setQuote(res.data.content);
-      setAuthor(res.data.author);
-      console.log(quote);
-    })
-    setShow(true);
-  }
   const prevFile = () => {
     setFile((file => {
       file--;
@@ -41,9 +28,6 @@ function Ads() {
 
   return (
     <div>
-      <div className='shipping' style={{cursor: 'pointer'}} onClick={() => showQuote()}>
-        <h3><i className="fas fa-quote-left"></i>{show ? `${quote} ${author}` : 'Click here to get inspirational quotes!'}<i className="fas fa-quote-right"></i></h3>
-      </div>
       <div className='container'><span className='opaque'>
         <div className='gradient-text'>
           <h1>TV Ads and Commercials</h1>

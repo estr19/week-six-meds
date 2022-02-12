@@ -1,22 +1,6 @@
 import React from "react";
-import {useState} from "react";
-import axios from 'axios';
 
 function ContactUs() {
-  const [quote, setQuote] = useState();
-  const [author, setAuthor] = useState();
-  const [show, setShow] = useState(false);
-
-  const showQuote = () => {
-    axios.get('https://api.quotable.io/random')
-    .then(res => {
-      setQuote(res.data.content);
-      setAuthor(res.data.author);
-      console.log(quote);
-    })
-    setShow(true);
-  }
-
   const clearInput = () => {
     window.onbeforeunload = () => {
       for(const form of document.getElementsByTagName('form')) {
@@ -27,9 +11,6 @@ function ContactUs() {
 
   return (
     <div>
-      <div className='shipping' style={{cursor: 'pointer'}} onClick={() => showQuote()}>
-        <h3><i className="fas fa-quote-left"></i>{show ? `${quote} ${author}` : 'Click here to get inspirational quotes!'}<i className="fas fa-quote-right"></i></h3>
-      </div>
       <div className='container'><span className='opaque'>
         <div className='gradient-text'>
           <h1>Contact Us</h1>
@@ -38,7 +19,7 @@ function ContactUs() {
       <div className="container">
         <form id="form" action="https://formspree.io/f/mgedarra" method="POST" className="topBefore opaque">
           <label className="formLabel"><span className='opaque' style={{textAlign: 'center'}}>NAME</span></label>
-          <input className='opaque' id="name" type="text" name="name" placeholder="your Name" required="" />
+          <input className='opaque' id="name" type="text" name="name" placeholder="your name" required="" />
           <label className="formLabel"><span className='opaque'>E-MAIL</span></label>
           <input className='opaque' id="email" type="email" name="_replyto" placeholder="your e-mail" required="" />
           <label className="formLabel"><span className='opaque'>MESSAGE</span></label>
