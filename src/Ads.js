@@ -29,7 +29,7 @@ function Ads() {
   return (
     <div>
       <div className='container'>
-        <span className='opaque' style={{padding: '2em 0.5em'}}>
+        <span className='opaque' style={{padding: '2em'}}>
           <h1 className='gradient-text'>TV Ads and Commercials</h1>
         </span>
       </div>

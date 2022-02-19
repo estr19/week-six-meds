@@ -551,5 +551,13 @@ export const data = [
     keyword: 'depression',
     image: 'https://www.vraylar.com/-/media/project/vraylar/navigation/vraylar_logo_dt.ashx',
     purpose: 'An atypical antipsychotic which is used in the treatment of schizophrenia, bipolar mania, and bipolar depression.'
+  },
+  {
+    id: 70,
+    name: 'Austedo',
+    medical: 'deutetrabenazine',
+    keyword: 'other',
+    image: 'https://www.austedo.com/globalassets/austedo-global/austedo-logo.png',
+    purpose: `A prescription medicine that is used to treat Tardive Dyskinesia and the involuntary movements (chorea) of Huntington's disease. It does not cure the cause of the involuntary movements, and it does not treat other symptoms of Huntington's disease, such as problems with thinking or emotions.`
   }
 ]

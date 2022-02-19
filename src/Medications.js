@@ -91,7 +91,7 @@ function Medications() {
         <span className='badge'> {cart.length} </span>
       </div>
       <div className='container'>
-        <span className='opaque' style={{padding: '2em 0.5em'}}>
+        <span className='opaque' style={{padding: '2em'}}>
           <h1 className='gradient-text'>Discover new medications.</h1>
         </span>
       </div>
