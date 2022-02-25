@@ -559,5 +559,29 @@ export const data = [
     keyword: 'other',
     image: 'https://www.austedo.com/globalassets/austedo-global/austedo-logo.png',
     purpose: `A prescription medicine that is used to treat Tardive Dyskinesia and the involuntary movements (chorea) of Huntington's disease. It does not cure the cause of the involuntary movements, and it does not treat other symptoms of Huntington's disease, such as problems with thinking or emotions.`
+  },
+  {
+    id: 71,
+    name: 'Descovy',
+    medical: 'emtricitabine tenofovir',
+    keyword: 'hiv',
+    image: 'https://tukuz.com/wp-content/uploads/2019/08/descovy-logo-vector.png',
+    purpose: `A once-daily prescription medicine for adults and adolescents at risk of HIV. It helps lower the chances of getting HIV through sex. It is not for use in people assigned female at birth who are at risk of getting HIV from vaginal sex, because its effectiveness has not been studied. You must be HIV-negative before and while taking DESCOVY for PrEP.`
+  },
+  {
+    id: 72,
+    name: 'Jynarque',
+    medical: 'tolvaptan',
+    keyword: 'other',
+    image: 'https://www.pantherxrare.com/wp-content/uploads/2019/07/jynarque-smaller.png',
+    purpose: `This medication is used by people who have a certain inherited kidney problem (autosomal dominant polycystic kidney disease-ADPKD). This inherited kidney problem leads to the growth of fluid-filled sacs (cysts) in your kidneys. Over time, the cysts grow in size, which can damage the way your kidneys work and lead to kidney failure. Tolvaptan  works by slowing the growth of kidney cysts caused by ADPKD. This effect helps protect your kidneys from damage and failure.`
+  },
+  {
+    id: 73,
+    name: 'Apretude',
+    medical: 'cabotegravir',
+    keyword: 'hiv',
+    image: 'https://info.viivhealthcare.com/hs-fs/hubfs/Apretude_ReminderLogo_w_Admin_RGB-(1).png?width=382&height=176&name=Apretude_ReminderLogo_w_Admin_RGB-(1).png',
+    purpose: `A  prescription medicine used for HIV-1 PrEP to reduce the risk of getting HIV-1 infection in adults and adolescents who weigh at least 77 pounds (at least 35 kg). `
   }
 ]
