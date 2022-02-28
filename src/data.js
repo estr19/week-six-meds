@@ -582,6 +582,14 @@ export const data = [
     medical: 'cabotegravir',
     keyword: 'hiv',
     image: 'https://info.viivhealthcare.com/hs-fs/hubfs/Apretude_ReminderLogo_w_Admin_RGB-(1).png?width=382&height=176&name=Apretude_ReminderLogo_w_Admin_RGB-(1).png',
-    purpose: `A  prescription medicine used for HIV-1 PrEP to reduce the risk of getting HIV-1 infection in adults and adolescents who weigh at least 77 pounds (at least 35 kg). `
+    purpose: `A prescription medicine used for HIV-1 PrEP to reduce the risk of getting HIV-1 infection in adults and adolescents who weigh at least 77 pounds (at least 35 kg).`
+  },
+  {
+    id: 74,
+    name: 'Cabenuva',
+    medical: 'cabotegravir rilpivirine',
+    keyword: 'hiv',
+    image: 'https://i-cf65.gskstatic.com/content/dam/cf-viiv/viivprograms/master/globals/Logo_Cabenuva.svg',
+    purpose: `A co-packaged antiretroviral medication for the treatment of HIV/AIDS. It contains cabotegravir and rilpivirine in a package with two separate injection vials.`
   }
 ]
