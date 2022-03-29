@@ -591,5 +591,85 @@ export const data = [
     keyword: 'hiv',
     image: 'https://i-cf65.gskstatic.com/content/dam/cf-viiv/viivprograms/master/globals/Logo_Cabenuva.svg',
     purpose: `A co-packaged antiretroviral medication for the treatment of HIV/AIDS. It contains cabotegravir and rilpivirine in a package with two separate injection vials.`
-  }
+  },
+  {
+    id: 75,
+    name: 'Vyepti',
+    medical: 'eptinezumab-jjmr',
+    keyword: 'migraine',
+    image: 'https://www.assets.lundbeck-tools.com/content/dam/lundbeck/vyepti/vyeptihcp/images/VYEPTI_Logo_R.svg',
+    purpose: `An intravenous (IV) infusion by a healthcare provider used for the preventive treatment of migraine in adults. `
+  },
+  {
+    id: 76,
+    name: 'Imfinzi',
+    medical: 'durvalumab',
+    keyword: 'cancer',
+    image: 'https://www.imfinzihcp.com/content/dam/website-services/us/434-imfinzi-com/hcp-lung-cancer/ogimage-400x400.jpg',
+    purpose: `An FDA-approved immunotherapy for cancer. It is a human immunoglobulin G1 kappa monoclonal antibody that blocks the interaction of programmed cell death ligand 1 with the PD-1, also known as a checkpoint inhibitor drug.`
+  },
+  {
+    id: 77,
+    name: 'Blenrep',
+    medical: 'belantamab mafodotin',
+    keyword: 'cancer',
+    image: 'https://www.blenrep.com/content/dam/cf-pharma/dsa-blenrepv2/master/blenrep-logo.png',
+    purpose: `A medication for the treatment of relapsed and refractory multiple myeloma. The most common adverse reactions include keratopathy, decreased visual acuity, nausea, blurred vision, pyrexia, infusion-related reactions, and fatigue.`
+  },
+  {
+    id: 78,
+    name: 'Zynlonta',
+    medical: 'loncastuximab tesirine',
+    keyword: 'cancer',
+    image: 'https://zynlonta.adctcongresshub.com/wp-content/uploads/2021/08/zynlonta-logo.png',
+    purpose: `A monoclonal antibody conjugate medication used to treat large B-cell lymphoma. It is an antibody-drug conjugate composed of a humanized antibody targeting the protein CD19.`
+  },
+  {
+    id: 79,
+    name: 'Monjuvi',
+    medical: 'tafasitamab-cxix',
+    keyword: 'cancer',
+    image: 'https://www.monjuvi.com/images/monjuvi-logo.png',
+    purpose: `A medication used in combination with lenalidomide for the treatment of adults with relapsed or refractory diffuse large B-cell lymphoma.`
+  },
+  {
+    id: 80,
+    name: 'Vyvanse',
+    medical: 'lisdexamfetamine dimesylate',
+    keyword: 'other',
+    image: 'https://www.vyvanse.com/content/dam/takeda/imported/nonproduct/images/vyvanse-logo.jpg',
+    purpose: `A prescription medicine used for the treatment of Attention-Deficit/Hyperactivity Disorder (ADHD) in patients 6 years and above, and for the treatment of moderate to severe binge eating disorder (B.E.D.) in adults. It is not for use in children under 6 years of age with ADHD, it is not for weight loss, and it is not known whether Vyvanse is safe and effective for the treatment of obesity.`
+  },
+  {
+    id: 81,
+    name: 'Myfembree',
+    medical: 'relugolix estradiol norethisterone acetate',
+    keyword: 'other',
+    image: 'https://www.myfembree.com/static/header-logo-2c3170549be5d816ef2131f22dafca2d.png',
+    purpose: `A fixed-dose combination hormonal medication which is used for the treatment of heavy menstrual bleeding associated with uterine leiomyomas in premenopausal women.`
+  },
+  {
+    id: 82,
+    name: 'Prolia',
+    medical: 'denosumab',
+    keyword: 'cancer',
+    image: 'https://www.pngitem.com/pimgs/m/365-3652104_prolia-amgen-hd-png-download.png',
+    purpose: `A targeted treatment that stops bone-removing cells before they can reach and damage the bone. It treats osteoporosis in men and women who will be taking corticosteroid medicines (such as prednisone) for at least six months and are at high risk for fracture.`
+  },
+  {
+    id: 83,
+    name: 'Cinqair',
+    medical: 'reslizumab',
+    keyword: 'breathing',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrZ6TeTQglDbmkj4sw0YoM0j7LovUsFCKfsZw4paQQAHzIFLBw1_y8NFOt_M3klIhIZ5A&usqp=CAU',
+    purpose: `A humanized monoclonal antibody against human interleukin-5. Reslizumab binds specifically to IL-5, a key cytokine responsible for the differentiation, maturation, recruitment and activation of human eosinophils. `
+  },
+  // {
+  //   id: 84,
+  //   name: '',
+  //   medical: '',
+  //   keyword: '',
+  //   image: '',
+  //   purpose: `A`
+  // }
 ]
