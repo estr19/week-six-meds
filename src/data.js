@@ -664,12 +664,20 @@ export const data = [
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrZ6TeTQglDbmkj4sw0YoM0j7LovUsFCKfsZw4paQQAHzIFLBw1_y8NFOt_M3klIhIZ5A&usqp=CAU',
     purpose: `A humanized monoclonal antibody against human interleukin-5. Reslizumab binds specifically to IL-5, a key cytokine responsible for the differentiation, maturation, recruitment and activation of human eosinophils. `
   },
+  {
+    id: 84,
+    name: 'Motilium',
+    medical: 'Domperidone',
+    keyword: 'other',
+    image: 'http://www.nvronlifescience.com/images/Product%20Logo/Esoron.jpg',
+    purpose: `A medicine that increases the movements or contractions of the stomach and bowel. Domperidone is also used to treat nausea and vomiting caused by other drugs used to treat Parkinson's Disease. Domperidone is to be given only by or under the immediate supervision of your doctor.`
+  },
   // {
-  //   id: 84,
+  //   id: 85,
   //   name: '',
   //   medical: '',
   //   keyword: '',
   //   image: '',
   //   purpose: `A`
-  // }
+  // },
 ]

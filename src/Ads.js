@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import {videos} from "./videos";
+import React, { useState } from "react";
+import { videos } from "./videos";
 import './App.css';
 
 function Ads() {
@@ -36,9 +36,9 @@ function Ads() {
       <div className='slideshow'>
         <div className='slideshowSlider'>
           <div className='container'>
-          <iframe className='slide' width='100%' height='400px' src={videoLink} title="YouTube video player" frameBorder='0' controlls='0'
+          <iframe className='slide' width='100%' height='400px' src={videoLink} title="YouTube video player" controlls='0'
             allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope;"
-            ></iframe>
+          ></iframe>
           </div>
           <div className='container' style={{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', backgroundColor: 'rgba(250, 250, 250, 0.75)', padding: '1em', margin: '1em'}}>
             <button onClick={() => prevFile()}>Prev</button>

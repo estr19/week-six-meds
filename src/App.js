@@ -5,7 +5,6 @@ import ContactUs from './ContactUs';
 import Medications from './Medications';
 import './App.css';
 import axios from 'axios';
-// import Cart from './Cart';
 
 function App() {
   const [quote, setQuote] = useState();
@@ -28,7 +27,6 @@ function App() {
           <Link to='/' className='link' >Home</Link>
           <Link to='/ads' className='link' >As Seen on TV</Link>
           <Link to='/contact' className='link' >Contact Us</Link>
-          {/* <Link to='/cart' className='link' >Cart</Link> */}
         </nav>
         <div className='shipping' style={{cursor: 'pointer'}} onClick={() => showQuote()}>
           <h3><i className="fas fa-quote-left"></i>{show ? `${quote} ${author}` : 'Click here to get inspirational quotes!'}<i className="fas fa-quote-right"></i></h3>
@@ -36,7 +34,6 @@ function App() {
         <Routes>
           <Route path='/' element={<Medications />}></Route>
           <Route path='/ads' element={<Ads />}></Route>
-          {/* <Route path='/cart' element={<Cart />}></Route> */}
           <Route path='/contact' element={<ContactUs />}></Route>
           <Route path='/home' element={<Medications />}></Route>
         </Routes>

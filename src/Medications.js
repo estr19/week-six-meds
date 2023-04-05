@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {data} from './data';
 import Buttons from './Buttons';
 import './App.css';
-// import Cart from './Cart';
 
 function Medications() {
   const [meds, setMeds] = useState(data);
@@ -108,12 +107,9 @@ function Medications() {
           }))}
         </ul>
         <div id='removeAll' style={{display: 'none', backgroundColor: 'rgba(250, 250, 250, 0.5)', padding: '1em', margin: '1em 9em', cursor: 'pointer'}} className='container' onClick={() => emptyCart()}>
-          <h3><span className='opaque' >Empty cart</span></h3>
+          <h3><span className='opaque'>Empty cart</span></h3>
         </div>
       </div>
-      {/* <div>
-        <Cart medCart={cart} setMedCart={setCart} />
-      </div> */}
       <Buttons multiFilter={multipleFilter} startEver={startOver} whatever={meds} data={data} clkLbl={clickLabel} />  {/* filteredMeds={chosenMeds} */}
       <div className='list'>
         {meds.map((element => {
