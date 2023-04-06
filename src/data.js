@@ -667,13 +667,21 @@ export const data = [
   {
     id: 84,
     name: 'Motilium',
-    medical: 'Domperidone',
+    medical: 'domperidone',
     keyword: 'other',
     image: 'http://www.nvronlifescience.com/images/Product%20Logo/Esoron.jpg',
     purpose: `A medicine that increases the movements or contractions of the stomach and bowel. Domperidone is also used to treat nausea and vomiting caused by other drugs used to treat Parkinson's Disease. Domperidone is to be given only by or under the immediate supervision of your doctor.`
   },
+  {
+    id: 85,
+    name: 'Belsomra',
+    medical: 'suvorexant',
+    keyword: 'sleep',
+    image: 'http://www.needymeds.org/images/Belsomra_1.png',
+    purpose: `An orexin antagonist medication which is used in the treatment of insomnia. It is indicated specifically for the treatment of insomnia characterized by difficulties with sleep onset and/or maintenance in adults.`
+  },
   // {
-  //   id: 85,
+  //   id: ,
   //   name: '',
   //   medical: '',
   //   keyword: '',
