@@ -680,6 +680,14 @@ export const data = [
     image: 'http://www.needymeds.org/images/Belsomra_1.png',
     purpose: `An orexin antagonist medication which is used in the treatment of insomnia. It is indicated specifically for the treatment of insomnia characterized by difficulties with sleep onset and/or maintenance in adults.`
   },
+  {
+    id: 86,
+    name: 'Lunesta',
+    medical: 'eszopiclone',
+    keyword: 'sleep',
+    image: 'https://lunesta.com/wp-content/uploads/2022/12/Lunesta_logo_small.svg',
+    purpose: `A sedative, also called a hypnotic, that has been shown to decrease sleep latency and improve sleep maintenance. It affects chemicals in your brain that may be unbalanced in people with sleep problems (insomnia).`
+  },
   // {
   //   id: ,
   //   name: '',
