@@ -688,6 +688,14 @@ export const data = [
     image: 'https://lunesta.com/wp-content/uploads/2022/12/Lunesta_logo_small.svg',
     purpose: `A sedative, also called a hypnotic, that has been shown to decrease sleep latency and improve sleep maintenance. It affects chemicals in your brain that may be unbalanced in people with sleep problems (insomnia).`
   },
+  {
+    id: 87,
+    name: 'Xarelto',
+    medical: 'rivaroxaban',
+    keyword: 'other',
+    image: 'https://www.thepharmaletter.com/media/image/xarelto_big.png',
+    purpose: `A medication that slows your body's ability to clot by selectively blocking one of the clotting factors found in your blood—an enzyme called Factor Xa ("10a")`
+  },
   // {
   //   id: ,
   //   name: '',
