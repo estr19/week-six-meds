@@ -696,6 +696,14 @@ export const data = [
     image: 'https://www.thepharmaletter.com/media/image/xarelto_big.png',
     purpose: `A medication that slows your body's ability to clot by selectively blocking one of the clotting factors found in your blood—an enzyme called Factor Xa ("10a")`
   },
+  {
+    id: 88,
+    name: 'Soltamox',
+    medical: 'tamoxifen',
+    keyword: 'cancer',
+    image: 'https://soltamox.com/wp-content/uploads/2019/12/soltamox-logo.png',
+    purpose: `A selective estrogen receptor modulator (SERM) medication used to treat breast cancer in men and women and as a prophylactic agent against breast cancer in women.`
+  },
   // {
   //   id: ,
   //   name: '',
