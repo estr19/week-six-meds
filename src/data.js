@@ -704,6 +704,14 @@ export const data = [
     image: 'https://soltamox.com/wp-content/uploads/2019/12/soltamox-logo.png',
     purpose: `A selective estrogen receptor modulator (SERM) medication used to treat breast cancer in men and women and as a prophylactic agent against breast cancer in women.`
   },
+  {
+    id: 89,
+    name: 'Neurotin',
+    medical: 'gabapentin',
+    keyword: 'other',
+    image: 'https://www.viatrisconnect.no/-/media/Project/Common/ViatrisConnectNO/Viatris-medicine/Neurontin/Neurontin-Logo-397x295.jpg',
+    purpose: `A medicine used to help manage certain epileptic seizures. It also is used to relieve pain for some conditions, such as shingles. Dizziness and drowsiness are common side effects of gabapentin. Some other possible side effects include weight gain and trouble with movement.`
+  },
   // {
   //   id: ,
   //   name: '',
