@@ -712,6 +712,14 @@ export const data = [
     image: 'https://www.viatrisconnect.no/-/media/Project/Common/ViatrisConnectNO/Viatris-medicine/Neurontin/Neurontin-Logo-397x295.jpg',
     purpose: `A medicine used to help manage certain epileptic seizures. It also is used to relieve pain for some conditions, such as shingles. Dizziness and drowsiness are common side effects of gabapentin. Some other possible side effects include weight gain and trouble with movement.`
   },
+  {
+    id: 90,
+    name: 'Trintellix',
+    medical: 'vortioxetine',
+    keyword: 'other',
+    image: 'https://us.trintellix.com/content/experience-fragments/takeda/trintellix-consumer/header/master/_jcr_content/root/navigationcontainer/primaryLogo/image.coreimg.png/1678467619585/tc-trintellix-logo.png',
+    purpose: `A medication used to treat major depressive disorder. Effectiveness is viewed as similar to that of other antidepressants. It is taken by mouth. Common side effects include nausea, vomiting, constipation, and sexual dysfunction.`
+  },
   // {
   //   id: ,
   //   name: '',
