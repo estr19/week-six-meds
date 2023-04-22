@@ -720,6 +720,14 @@ export const data = [
     image: 'https://us.trintellix.com/content/experience-fragments/takeda/trintellix-consumer/header/master/_jcr_content/root/navigationcontainer/primaryLogo/image.coreimg.png/1678467619585/tc-trintellix-logo.png',
     purpose: `A medication used to treat major depressive disorder. Effectiveness is viewed as similar to that of other antidepressants. It is taken by mouth. Common side effects include nausea, vomiting, constipation, and sexual dysfunction.`
   },
+  {
+    id: 91,
+    name: 'Bydureon',
+    medical: 'exenatide',
+    keyword: 'diabetes',
+    image: 'https://www.pngkit.com/png/detail/388-3887484_bydureon-for-injectable-suspension-bydureon-logo-png.png',
+    purpose: `A GLP-1 receptor agonist released from the gut and acts to increase glucose-dependent insulin secretion from pancreatic beta cells, suppress glucagon secretion, delay gastric emptying, and reduce food intake. The binding of the drug to pancreatic GLP-1 receptors mediates these actions.`
+  },
   // {
   //   id: ,
   //   name: '',
