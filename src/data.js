@@ -729,6 +729,30 @@ export const data = [
     purpose: `A GLP-1 receptor agonist released from the gut and acts to increase glucose-dependent insulin secretion from pancreatic beta cells, suppress glucagon secretion, delay gastric emptying, and reduce food intake. The binding of the drug to pancreatic GLP-1 receptors mediates these actions.`
   },
   // {
+  //   id: 92,
+  //   name: 'Rozlytrek',
+  //   medical: '',
+  //   keyword: '',
+  //   image: '',
+  //   purpose: `A`
+  // },
+  {
+    id: 93,
+    name: 'Nubeqa',
+    medical: 'darolutamide',
+    keyword: 'cancer',
+    image: 'https://www.nubeqa-us.com/sites/g/files/vrxlpx46506/files/2020-03/nubeqa-logo.png',
+    purpose: `A prescription medicine used to treat adults with prostate cancer: that has not spread to other parts of the body and no longer responds to medical or surgical treatment that lowers testosterone (nmCRPC).`
+  },
+  // {
+  //   id: 94,
+  //   name: 'Xofigo',
+  //   medical: '',
+  //   keyword: '',
+  //   image: '',
+  //   purpose: `A`
+  // },
+  // {
   //   id: ,
   //   name: '',
   //   medical: '',
