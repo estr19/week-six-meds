@@ -4,7 +4,7 @@ export const data = [
     name: 'Skyrizi',
     medical: 'risankizumab-rzaa',
     keyword: 'psoriasis',
-    image: 'https://www.skyrizi.com/content/dam/skyrizi/images/og-images/skyrizi-homepage_r2_1200x630.jpg',
+    image: 'https://www.skyrizihcp.com/content/dam/global/brand-explorer-product-skyrizi.png',
     purpose: 'Used to treat adults with moderate to severe plaque psoriasis who may benefit from taking injections or pills (systemic therapy) or treatment using ultraviolet or UV light (phototherapy).'
 
   },
@@ -53,7 +53,7 @@ export const data = [
     name: 'Epclusa',
     medical: 'sofosbuvir velpatasvir',
     keyword: 'other',
-    image: 'https://www.mixdexhq.com/wp-content/uploads/epclusa-logo.jpg',
+    image: 'https://hcp.epclusa.com/Static/hcp_epclusa_com/v2/images/Epclusa-Logo-Header.png',
     purpose: 'A prescription medicine used to treat adults with chronic hepatitis C (Hep C) genotype 1-6 infection with or without cirrhosis (compensated).'
   },
   {
@@ -109,7 +109,7 @@ export const data = [
     name: 'Rinvoq',
     medical: 'upadacitinib',
     keyword: 'other',
-    image: 'https://www.drugdiscoverytrends.com/wp-content/uploads/2020/07/rinvoq-abbvie.png',
+    image: 'https://images.ctfassets.net/4f3rgqwzdznj/3ikRwe4OyM8k7puCM9tZix/9204cde7a65edf73862b1b1c71c5d0c7/Rinvoq_Logo_320x210_Black.png',
     purpose: 'A JAK (Janus kinase) inhibitor approved for adults with moderate to severe rheumatoid arthritis in whom TNF blockers did not work well. '
   },
   {
@@ -197,7 +197,7 @@ export const data = [
     name: 'Rexulti',
     medical: 'brexpiprazole',
     keyword: 'depression',
-    image: 'https://media.consumeraffairs.com/files/cache/news/Rexulti_Otsuka_Pharmaceutical_Company_large.jpg',
+    image: 'https://www.rexultihcp.com/sites/g/files/qhldwo6116/files/rexultihcp_logo.png',
     purpose: 'A prescription medicine used to treat a major depressive disorder (MDD): it is used with antidepressant medicines, when your healthcare provider determines that an antidepressant alone is not enough to treat your depression. It is not known if REXULTI is safe and effective in people under 18 years of age. '
   },
   {
@@ -205,7 +205,7 @@ export const data = [
     name: 'Nurtec ODT',
     medical: 'rimegepant',
     keyword: 'migraine',
-    image: 'https://www.nurtec.com/Content/img/social-share-logo.jpg',
+    image: 'https://www.nurtec.com/content/dam/nurtec/nurtec-consumer/images/social-share-logo.jpg',
     purpose: 'A medicine that is used to treat migraine in adults. It is for the acute treatment of migraine attacks with or without aura and the preventive treatment of episodic migraine. It is not known if Nurtec ODT is safe and effective in children.'
   },
   {
@@ -221,7 +221,7 @@ export const data = [
     name: 'Calquence',
     medical: 'acalabrutinib',
     keyword: 'cancer',
-    image: 'https://www.calquencehcp.com/content/dam/physician-services/us/578-hcp-calquence/desktop/CALQUENCE(acalabrutinib)-Twitter.jpg',
+    image: 'https://mma.prnewswire.com/media/594060/Calquence_Logo.jpg',
     purpose: 'Used to treat adults with mantle cell lymphoma (MCL) who have received at least one prior treatment for their cancer, or adults with chronic lymphocytic leukemia (CLL) or small lymphocytic lymphoma (SLL).'
   },
   {
@@ -237,7 +237,7 @@ export const data = [
     name: 'Rybelsus',
     medical: 'semaglutide',
     keyword: 'diabetes',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNzNtz8CuulaAuKvocpGdYZwge0eVGaBz5UvYpm4Mb0lX8hYBBaWD744xj8HO5loV36vQ&usqp=CAU',
+    image: 'https://espanol.rybelsus.com/content/dam/rybelsus-spanish/preguntas-frecuentes/logo-rybelsus-nav.png',
     purpose: 'A prescription medicine used along with diet and exercise to improve blood sugar in adults with type 2 diabetes.'
   },
   {
@@ -253,7 +253,7 @@ export const data = [
     name: 'Fasenra',
     medical: 'benralizumab',
     keyword: 'breathing',
-    image: 'https://www.fasenra.com/content/dam/website-services/us/519-fasenra-com/fasenra-brand-logo.png',
+    image: 'https://www.thepharmaletter.com/media/image/fasenra_big.jpg',
     purpose: 'This medication is indicated for the add-on maintenance treatment of patients with severe asthma aged 12 years and older, and with an eosinophilic phenotype. It is the first and only respiratory biologic that combines Q8W maintenance dosing with at-home or in-office administration options and offers patients the fewest injections per year.'
   },
   {
@@ -261,7 +261,7 @@ export const data = [
     name: 'Kesimpta',
     medical: 'ofatumumab',
     keyword: 'ms-uc',
-    image: 'https://www.kesimpta.com/siteassets/alongside-kesimpta-logo.png',
+    image: 'https://biopharma.media/wp-content/uploads/2021/06/kesimpta-logo.png',
     purpose: 'A prescription medicine used to treat adults with relapsing forms of multiple sclerosis (MS) including clinically isolated syndrome (CIS), relapsing-remitting disease, and active secondary progressive disease.'
   },
   {
@@ -333,7 +333,7 @@ export const data = [
     name: 'Sunosi',
     medical: 'solriamfetol',
     keyword: 'sleep',
-    image: 'https://www.jazzpharma.com/wp-content/uploads/2015/06/Sunosi_Logo.png',
+    image: 'https://www.multivu.com/players/English/8445651-jazz-pharma-fda-approval-of-sunosi-for-excessive-daytime-sleepiness/image/SunosiLogo_1542757248645-HR.jpg',
     purpose: 'A prescription medicine used to improve wakefulness in adults with excessive daytime sleepiness due to narcolepsy or obstructive sleep apnea (OSA).'
   },
   {
@@ -371,9 +371,9 @@ export const data = [
   {
     id: 47,
     name: 'Lovenox',
-    medical: 'enoxaparin sodium',
+    medical: 'enoxaparin sodium injection',
     keyword: 'diabetes',
-    image: 'https://www.sanofi.us/-/media/Project/One-Sanofi-Web/Websites/North-America/Sanofi-US/Home/products/img/Lovenox_logo-370x250.jpg?h=250&la=en&w=370&hash=341276B3209C0A746AA44C4770897DB5',
+    image: 'https://assets.sutori.com/user-uploads/image/2636ee20-10f4-4158-b795-16e7e2a75a37/45b1c01151046d2c47626d79a3fd63ed.jpeg',
     purpose: 'An anticoagulant medication. It is used to treat and prevent deep vein thrombosis and pulmonary embolism including during pregnancy and following certain types of surgery. It is also used in those with acute coronary syndrome and heart.'
   },
   {
@@ -501,7 +501,7 @@ export const data = [
     name: 'Lynparza',
     medical: 'olaparib',
     keyword: 'cancer',
-    image: 'https://www.lynparza.com/content/dam/website-services/us/579-lynparza-dtc/LYNPARZA_Tablets%20150mg.png',
+    image: 'https://www.lynparzahcp.com/content/dam/physician-services/us/590-lynparza-hcp-branded/hcp-global/twittercard.png',
     purpose: 'A medication for the maintenance treatment of BRCA-mutated advanced ovarian cancer in adults. It is a PARP inhibitor, inhibiting poly ADP ribose polymerase, an enzyme involved in DNA repair.'
   },
   {
@@ -549,7 +549,7 @@ export const data = [
     name: 'Vraylar',
     medical: 'cariprazine',
     keyword: 'depression',
-    image: 'https://www.vraylar.com/-/media/project/vraylar/navigation/vraylar_logo_dt.ashx',
+    image: 'https://www.vraylar.com/content/dam/vraylar/images/homepage/amdd/vraylar-logo-color_r1_allviews.png',
     purpose: 'An atypical antipsychotic which is used in the treatment of schizophrenia, bipolar mania, and bipolar depression.'
   },
   {
@@ -557,7 +557,7 @@ export const data = [
     name: 'Austedo',
     medical: 'deutetrabenazine',
     keyword: 'other',
-    image: 'https://www.austedo.com/globalassets/austedo-global/austedo-logo.png',
+    image: 'https://www.austedo.com/globalassets/austedo-global/austedo-logo329.png',
     purpose: `A prescription medicine that is used to treat Tardive Dyskinesia and the involuntary movements (chorea) of Huntington's disease. It does not cure the cause of the involuntary movements, and it does not treat other symptoms of Huntington's disease, such as problems with thinking or emotions.`
   },
   {
@@ -613,7 +613,7 @@ export const data = [
     name: 'Blenrep',
     medical: 'belantamab mafodotin',
     keyword: 'cancer',
-    image: 'https://www.blenrep.com/content/dam/cf-pharma/dsa-blenrepv2/master/blenrep-logo.png',
+    image: 'https://themmrf.org/wp-content/uploads/2020/08/Blenrep-logo.png',
     purpose: `A medication for the treatment of relapsed and refractory multiple myeloma. The most common adverse reactions include keratopathy, decreased visual acuity, nausea, blurred vision, pyrexia, infusion-related reactions, and fatigue.`
   },
   {
@@ -621,7 +621,7 @@ export const data = [
     name: 'Zynlonta',
     medical: 'loncastuximab tesirine',
     keyword: 'cancer',
-    image: 'https://zynlonta.adctcongresshub.com/wp-content/uploads/2021/08/zynlonta-logo.png',
+    image: 'https://www.zynlontahcp.com/wp-content/uploads/2021/08/logo-zynlonta-social.jpg',
     purpose: `A monoclonal antibody conjugate medication used to treat large B-cell lymphoma. It is an antibody-drug conjugate composed of a humanized antibody targeting the protein CD19.`
   },
   {
@@ -645,7 +645,7 @@ export const data = [
     name: 'Myfembree',
     medical: 'relugolix estradiol norethisterone acetate',
     keyword: 'other',
-    image: 'https://www.myfembree.com/static/header-logo-2c3170549be5d816ef2131f22dafca2d.png',
+    image: 'https://www.myfembree.com/static/header-logo-cd5b45a8b063b73bb135c8f0b16314e1.png',
     purpose: `A fixed-dose combination hormonal medication which is used for the treatment of heavy menstrual bleeding associated with uterine leiomyomas in premenopausal women.`
   },
   {
