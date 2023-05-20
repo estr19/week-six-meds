@@ -728,14 +728,14 @@ export const data = [
     image: 'https://www.pngkit.com/png/detail/388-3887484_bydureon-for-injectable-suspension-bydureon-logo-png.png',
     purpose: `A GLP-1 receptor agonist released from the gut and acts to increase glucose-dependent insulin secretion from pancreatic beta cells, suppress glucagon secretion, delay gastric emptying, and reduce food intake. The binding of the drug to pancreatic GLP-1 receptors mediates these actions.`
   },
-  // {
-  //   id: 92,
-  //   name: 'Rozlytrek',
-  //   medical: '',
-  //   keyword: '',
-  //   image: '',
-  //   purpose: `A`
-  // },
+  {
+    id: 92,
+    name: 'Rozlytrek',
+    medical: 'entrectinib',
+    keyword: 'cancer',
+    image: 'https://www.gene.com/assets/content/product_logo/ROZL_US_TM_RGB_FC_Pos.png',
+    purpose: `A is an anti-cancer medication used to treat ROS1-positive non-small cell lung cancer and NTRK fusion-positive solid tumors. It is a selective tyrosine kinase inhibitor, of the tropomyosin receptor kinases A, B and C, C-ros oncogene 1 and anaplastic lymphoma kinase.`
+  },
   {
     id: 93,
     name: 'Nubeqa',
