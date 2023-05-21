@@ -744,14 +744,14 @@ export const data = [
     image: 'https://www.nubeqa-us.com/sites/g/files/vrxlpx46506/files/2020-03/nubeqa-logo.png',
     purpose: `A prescription medicine used to treat adults with prostate cancer: that has not spread to other parts of the body and no longer responds to medical or surgical treatment that lowers testosterone (nmCRPC).`
   },
-  // {
-  //   id: 94,
-  //   name: 'Xofigo',
-  //   medical: '',
-  //   keyword: '',
-  //   image: '',
-  //   purpose: `A`
-  // },
+  {
+    id: 94,
+    name: 'Xofigo',
+    medical: 'radium Ra 223 dichloride',
+    keyword: 'cancer',
+    image: 'https://www.xofigo-us.com/sites/g/files/vrxlpx45091/files/2020-09/xofigo-logo_0.png',
+    purpose: `An injection used to treat prostate cancer that no longer responds to hormonal or surgical treatment that lowers testosterone.`
+  },
   // {
   //   id: ,
   //   name: '',
