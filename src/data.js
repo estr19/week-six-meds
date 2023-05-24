@@ -752,6 +752,22 @@ export const data = [
     image: 'https://www.xofigo-us.com/sites/g/files/vrxlpx45091/files/2020-09/xofigo-logo_0.png',
     purpose: `An injection used to treat prostate cancer that no longer responds to hormonal or surgical treatment that lowers testosterone.`
   },
+  {
+    id: 95,
+    name: 'Polivy',
+    medical: 'polatuzumab vedotin-viiq',
+    keyword: 'cancer',
+    image: 'https://www.polivy.com/content/dam/gene/polivy/patient/en_us/rrdlbcl/images/polivy-header-logo-image-2x.genecoreimg.750.png',
+    purpose: `A cancer medicine used to treat adults with diffuse large B-cell lymphoma (DLBCL) whose cancer has returned or has stopped responding to other treatments and who cannot have a bone-marrow transplantation. It is used in combination with two other medicines, bendamustine and rituximab.`
+  },
+  {
+    id: 96,
+    name: 'Bendeka, Treanda, Rituxan',
+    medical: '',
+    keyword: '',
+    image: '',
+    purpose: `A`
+  },
   // {
   //   id: ,
   //   name: '',
