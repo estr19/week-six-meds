@@ -762,15 +762,15 @@ export const data = [
   },
   {
     id: 96,
-    name: 'Bendeka, Treanda, Rituxan',
-    medical: '',
-    keyword: '',
-    image: '',
-    purpose: `A`
+    name: 'Bendeka',
+    medical: 'bendamustine HCl',
+    keyword: 'cancer',
+    image: 'https://www.bendeka.com/globalassets/bendeka-consumer/logo5.png',
+    purpose: `It can treat chronic lymphocytic leukemia (CLL) and non-Hodgkin's lymphoma (NHL).`
   },
   // {
   //   id: ,
-  //   name: '',
+  //   name: 'Treanda, Rituxan',
   //   medical: '',
   //   keyword: '',
   //   image: '',
