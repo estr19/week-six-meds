@@ -768,9 +768,17 @@ export const data = [
     image: 'https://www.bendeka.com/globalassets/bendeka-consumer/logo5.png',
     purpose: `It can treat chronic lymphocytic leukemia (CLL) and non-Hodgkin's lymphoma (NHL).`
   },
+  {
+    id: 97,
+    name: 'Rituxan',
+    medical: 'rituximab',
+    keyword: 'cancer',
+    image: 'https://www.rituxan.com/content/dam/gene/rituxan/global/logos/rituxan-patient-gateway-logo.genecoreimg.750.png',
+    purpose: `A monoclonal antibody medication used to treat certain autoimmune diseases and types of cancer.`
+  },
   // {
   //   id: ,
-  //   name: 'Treanda, Rituxan',
+  //   name: 'Treanda',
   //   medical: '',
   //   keyword: '',
   //   image: '',
