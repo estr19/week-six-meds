@@ -777,8 +777,24 @@ export const data = [
     purpose: `A monoclonal antibody medication used to treat certain autoimmune diseases and types of cancer.`
   },
   // {
-  //   id: ,
-  //   name: 'Treanda',
+  //   id: 98,
+  //   name: 'Treanda Wegovy ',
+  //   medical: '',
+  //   keyword: '',
+  //   image: '',
+  //   purpose: `A`
+  // },
+  // {
+  //   id: 99,
+  //   name: 'Wegovy ',
+  //   medical: '',
+  //   keyword: '',
+  //   image: '',
+  //   purpose: `A`
+  // },
+  // {
+  //   id: 100,
+  //   name: 'Mounjaro',
   //   medical: '',
   //   keyword: '',
   //   image: '',
